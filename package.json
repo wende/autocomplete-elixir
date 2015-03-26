@@ -1,13 +1,13 @@
 {
   "name": "autocomplete-elixir",
   "main": "./lib/autocomplete-elixir",
-  "version": "0.1.3",
+  "version": "0.0.0",
   "author": {
     "name": "Krzysztof Wende <iraasta>",
     "email": "iraasta@gmail.com",
     "url": "http://neontree.pl/"
   },
-  "description": "Intelligent elixir code completion",
+  "description": "Intelligent effectslixir code completion",
   "keywords": [
     "autocomplete",
     "autocomplete-plus",
@@ -31,13 +31,13 @@
   },
   "providedServices": {
     "autocomplete.provider": {
-      "description": "Intelligent elixir code completion",
+      "description": "Intelligent Elixir code completion",
       "versions": {
         "1.1.0": "provideAutocompletion"
       }
     }
   },
-  "readme": "# Atom Autocomplete+ elixir. Provides intelligent code completion for elixir. Requires [Autocomplete+](https://github.com/atom-community/autocomplete-plus)",
+  "readme": "# Atom Autocomplete+ Elixir. Provides intelligent code completion for Elixir. Requires [Autocomplete+](https://github.com/atom-community/autocomplete-plus)",
   "readmeFilename": "README.md",
   "_id": "autocomplete-elixir@0.0.1",
   "_shasum": "2a160ad7bc20a2f00e02c9689b0435f269d1759c",
