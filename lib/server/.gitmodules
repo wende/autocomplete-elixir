@@ -1,0 +1,3 @@
+[submodule "pty.js/deps/winpty"]
+	path = pty.js/deps/winpty
+	url = https://github.com/peters/winpty.git

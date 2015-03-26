@@ -1,0 +1,169 @@
+{
+  "name": "autocomplete-elixir",
+  "main": "./lib/autocomplete-elixir",
+  "version": "0.1.3",
+  "author": {
+    "name": "Krzysztof Wende <iraasta>",
+    "email": "iraasta@gmail.com",
+    "url": "http://neontree.pl/"
+  },
+  "description": "Intelligent elixir code completion",
+  "keywords": [
+    "autocomplete",
+    "autocomplete-plus",
+    "alchemide",
+    "elixir"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iraasta/autocomplete-elixir"
+  },
+  "homepage": "https://github.com/iraasta/autocomplete-elixir",
+  "bugs": {
+    "url": "https://github.com/iraasta/autocomplete-elixir/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "jquery": "^2"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "description": "Intelligent elixir code completion",
+      "versions": {
+        "1.1.0": "provideAutocompletion"
+      }
+    }
+  },
+  "readme": "# Atom Autocomplete+ elixir. Provides intelligent code completion for elixir. Requires [Autocomplete+](https://github.com/atom-community/autocomplete-plus)",
+  "readmeFilename": "README.md",
+  "_id": "autocomplete-elixir@0.0.1",
+  "_shasum": "2a160ad7bc20a2f00e02c9689b0435f269d1759c",
+  "_resolved": "file:../d-115224-6283-1gx6vp2/package.tgz",
+  "_from": "../d-115224-6283-1gx6vp2/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "jquery",
+        "version": "2.1.3",
+        "path": "node_modules/jquery/dist/jquery.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/autocomplete-elixir-client.coffee",
+        "lib/autocomplete-elixir-provider.coffee",
+        "lib/autocomplete-elixir.coffee"
+      ],
+      ".json": [
+        "node_modules/jquery/bower.json",
+        "node_modules/jquery/package.json",
+        "package.json"
+      ],
+      ".js": [
+        "node_modules/jquery/dist/cdn/jquery-2.1.3.js",
+        "node_modules/jquery/dist/cdn/jquery-2.1.3.min.js",
+        "node_modules/jquery/dist/jquery.js",
+        "node_modules/jquery/dist/jquery.min.js",
+        "node_modules/jquery/src/ajax/jsonp.js",
+        "node_modules/jquery/src/ajax/load.js",
+        "node_modules/jquery/src/ajax/parseJSON.js",
+        "node_modules/jquery/src/ajax/parseXML.js",
+        "node_modules/jquery/src/ajax/script.js",
+        "node_modules/jquery/src/ajax/var/nonce.js",
+        "node_modules/jquery/src/ajax/var/rquery.js",
+        "node_modules/jquery/src/ajax/xhr.js",
+        "node_modules/jquery/src/ajax.js",
+        "node_modules/jquery/src/attributes/attr.js",
+        "node_modules/jquery/src/attributes/classes.js",
+        "node_modules/jquery/src/attributes/prop.js",
+        "node_modules/jquery/src/attributes/support.js",
+        "node_modules/jquery/src/attributes/val.js",
+        "node_modules/jquery/src/attributes.js",
+        "node_modules/jquery/src/callbacks.js",
+        "node_modules/jquery/src/core/access.js",
+        "node_modules/jquery/src/core/init.js",
+        "node_modules/jquery/src/core/parseHTML.js",
+        "node_modules/jquery/src/core/ready.js",
+        "node_modules/jquery/src/core/var/rsingleTag.js",
+        "node_modules/jquery/src/core.js",
+        "node_modules/jquery/src/css/addGetHookIf.js",
+        "node_modules/jquery/src/css/curCSS.js",
+        "node_modules/jquery/src/css/defaultDisplay.js",
+        "node_modules/jquery/src/css/hiddenVisibleSelectors.js",
+        "node_modules/jquery/src/css/support.js",
+        "node_modules/jquery/src/css/swap.js",
+        "node_modules/jquery/src/css/var/cssExpand.js",
+        "node_modules/jquery/src/css/var/getStyles.js",
+        "node_modules/jquery/src/css/var/isHidden.js",
+        "node_modules/jquery/src/css/var/rmargin.js",
+        "node_modules/jquery/src/css/var/rnumnonpx.js",
+        "node_modules/jquery/src/css.js",
+        "node_modules/jquery/src/data/Data.js",
+        "node_modules/jquery/src/data/accepts.js",
+        "node_modules/jquery/src/data/var/data_priv.js",
+        "node_modules/jquery/src/data/var/data_user.js",
+        "node_modules/jquery/src/data.js",
+        "node_modules/jquery/src/deferred.js",
+        "node_modules/jquery/src/deprecated.js",
+        "node_modules/jquery/src/dimensions.js",
+        "node_modules/jquery/src/effects/Tween.js",
+        "node_modules/jquery/src/effects/animatedSelector.js",
+        "node_modules/jquery/src/effects.js",
+        "node_modules/jquery/src/event/ajax.js",
+        "node_modules/jquery/src/event/alias.js",
+        "node_modules/jquery/src/event/support.js",
+        "node_modules/jquery/src/event.js",
+        "node_modules/jquery/src/exports/amd.js",
+        "node_modules/jquery/src/exports/global.js",
+        "node_modules/jquery/src/intro.js",
+        "node_modules/jquery/src/jquery.js",
+        "node_modules/jquery/src/manipulation/_evalUrl.js",
+        "node_modules/jquery/src/manipulation/support.js",
+        "node_modules/jquery/src/manipulation/var/rcheckableType.js",
+        "node_modules/jquery/src/manipulation.js",
+        "node_modules/jquery/src/offset.js",
+        "node_modules/jquery/src/outro.js",
+        "node_modules/jquery/src/queue/delay.js",
+        "node_modules/jquery/src/queue.js",
+        "node_modules/jquery/src/selector-native.js",
+        "node_modules/jquery/src/selector-sizzle.js",
+        "node_modules/jquery/src/selector.js",
+        "node_modules/jquery/src/serialize.js",
+        "node_modules/jquery/src/sizzle/dist/sizzle.js",
+        "node_modules/jquery/src/sizzle/dist/sizzle.min.js",
+        "node_modules/jquery/src/traversing/findFilter.js",
+        "node_modules/jquery/src/traversing/var/rneedsContext.js",
+        "node_modules/jquery/src/traversing.js",
+        "node_modules/jquery/src/var/arr.js",
+        "node_modules/jquery/src/var/class2type.js",
+        "node_modules/jquery/src/var/concat.js",
+        "node_modules/jquery/src/var/hasOwn.js",
+        "node_modules/jquery/src/var/indexOf.js",
+        "node_modules/jquery/src/var/pnum.js",
+        "node_modules/jquery/src/var/push.js",
+        "node_modules/jquery/src/var/rnotwhite.js",
+        "node_modules/jquery/src/var/slice.js",
+        "node_modules/jquery/src/var/strundefined.js",
+        "node_modules/jquery/src/var/support.js",
+        "node_modules/jquery/src/var/toString.js",
+        "node_modules/jquery/src/wrap.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "server",
+          "spec"
+        ],
+        "dependencies": {
+          "jquery": "^2"
+        }
+      }
+    ]
+  }
+}
