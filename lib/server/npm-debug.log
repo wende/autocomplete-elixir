@@ -10,9 +10,9 @@
 1 verbose cli   '--arch=x64' ]
 2 info using npm@2.5.1
 3 info using node@v0.10.35
-4 verbose install where, deps [ '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server',
+4 verbose install where, deps [ '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server',
 4 verbose install   [ 'extend', 'nan', 'mocha' ] ]
-5 verbose install where, peers [ '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server',
+5 verbose install where, peers [ '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server',
 5 verbose install   [] ]
 6 info preinstall pty.js@0.2.6
 7 warn package.json jsdom@0.2.19 'repositories' (plural) Not supported. Please pick one as the 'repository' field
@@ -364,39 +364,39 @@
 90 silly install resolved     directories: {},
 90 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz',
 90 silly install resolved     readme: 'ERROR: No README data found!' } ]
-91 info install extend@1.2.1 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server
-92 info install mocha@1.17.1 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server
-93 info install nan@1.7.0 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server
+91 info install extend@1.2.1 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server
+92 info install mocha@1.17.1 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server
+93 info install nan@1.7.0 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server
 94 info installOne extend@1.2.1
-95 verbose installOne of extend to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server not in flight; installing
+95 verbose installOne of extend to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server not in flight; installing
 96 info installOne mocha@1.17.1
-97 verbose installOne of mocha to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server not in flight; installing
+97 verbose installOne of mocha to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server not in flight; installing
 98 info installOne nan@1.7.0
-99 verbose installOne of nan to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server not in flight; installing
-100 verbose lock using /home/iraasta/.atom/.apm/_locks/extend-8638616d1ae43e4a.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/extend
-101 verbose lock using /home/iraasta/.atom/.apm/_locks/mocha-9f1e6f8cd615b646.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-102 verbose lock using /home/iraasta/.atom/.apm/_locks/nan-f63f52e0e0dff78a.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nan
-103 silly install write writing extend 1.2.1 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/extend
+99 verbose installOne of nan to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server not in flight; installing
+100 verbose lock using /home/iraasta/.atom/.apm/_locks/extend-8638616d1ae43e4a.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/extend
+101 verbose lock using /home/iraasta/.atom/.apm/_locks/mocha-9f1e6f8cd615b646.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+102 verbose lock using /home/iraasta/.atom/.apm/_locks/nan-f63f52e0e0dff78a.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nan
+103 silly install write writing extend 1.2.1 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/extend
 104 silly cache addNamed cb extend@1.2.1
 105 verbose unbuild node_modules/extend
-106 silly install write writing mocha 1.17.1 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
+106 silly install write writing mocha 1.17.1 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
 107 silly cache addNamed cb mocha@1.17.1
 108 verbose unbuild node_modules/mocha
-109 silly install write writing nan 1.7.0 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nan
+109 silly install write writing nan 1.7.0 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nan
 110 silly cache addNamed cb nan@1.7.0
 111 verbose unbuild node_modules/nan
-112 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/extend
-113 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-114 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nan
+112 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/extend
+113 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+114 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nan
 115 verbose tar unpack /home/iraasta/.atom/.apm/extend/1.2.1/package.tgz
-116 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/extend
-117 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/extend
+116 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/extend
+117 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/extend
 118 verbose tar unpack /home/iraasta/.atom/.apm/mocha/1.17.1/package.tgz
-119 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-120 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
+119 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+120 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
 121 verbose tar unpack /home/iraasta/.atom/.apm/nan/1.7.0/package.tgz
-122 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nan
-123 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nan
+122 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nan
+123 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nan
 124 silly gunzTarPerm modes [ '775', '664' ]
 125 silly gunzTarPerm modes [ '775', '664' ]
 126 silly gunzTarPerm modes [ '775', '664' ]
@@ -439,19 +439,19 @@
 163 silly gunzTarPerm modified mode [ 'images/ok.png', 420, 436 ]
 164 info preinstall extend@1.2.1
 165 silly install resolved []
-166 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/extend
-167 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/extend
+166 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/extend
+167 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/extend
 168 verbose linkStuff [ false,
 168 verbose linkStuff   false,
 168 verbose linkStuff   false,
-168 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+168 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 169 info linkStuff extend@1.2.1
 170 verbose linkBins extend@1.2.1
 171 verbose linkMans extend@1.2.1
 172 verbose rebuildBundles extend@1.2.1
 173 info install extend@1.2.1
 174 info postinstall extend@1.2.1
-175 verbose unlock done using /home/iraasta/.atom/.apm/_locks/extend-8638616d1ae43e4a.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/extend
+175 verbose unlock done using /home/iraasta/.atom/.apm/_locks/extend-8638616d1ae43e4a.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/extend
 176 silly gunzTarPerm extractEntry lib/utils.js
 177 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
 178 silly gunzTarPerm extractEntry lib/hook.js
@@ -478,19 +478,19 @@
 199 silly gunzTarPerm extractEntry lib/interfaces/index.js
 200 silly gunzTarPerm modified mode [ 'lib/interfaces/index.js', 420, 436 ]
 201 silly install resolved []
-202 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nan
-203 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nan
+202 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nan
+203 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nan
 204 verbose linkStuff [ false,
 204 verbose linkStuff   false,
 204 verbose linkStuff   false,
-204 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+204 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 205 info linkStuff nan@1.7.0
 206 verbose linkBins nan@1.7.0
 207 verbose linkMans nan@1.7.0
 208 verbose rebuildBundles nan@1.7.0
 209 info install nan@1.7.0
 210 info postinstall nan@1.7.0
-211 verbose unlock done using /home/iraasta/.atom/.apm/_locks/nan-f63f52e0e0dff78a.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nan
+211 verbose unlock done using /home/iraasta/.atom/.apm/_locks/nan-f63f52e0e0dff78a.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nan
 212 silly gunzTarPerm extractEntry lib/interfaces/qunit.js
 213 silly gunzTarPerm modified mode [ 'lib/interfaces/qunit.js', 420, 436 ]
 214 silly gunzTarPerm extractEntry lib/interfaces/tdd.js
@@ -1108,85 +1108,85 @@
 459 silly install resolved     _resolved: 'https://registry.npmjs.org/glob/-/glob-3.2.3.tgz',
 459 silly install resolved     readme: 'ERROR: No README data found!',
 459 silly install resolved     homepage: 'https://github.com/isaacs/node-glob' } ]
-460 info install commander@2.0.0 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-461 info install growl@1.7.0 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-462 info install jade@0.26.3 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-463 info install diff@1.0.7 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-464 info install debug@2.1.3 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-465 info install mkdirp@0.3.5 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-466 info install glob@3.2.3 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
+460 info install commander@2.0.0 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+461 info install growl@1.7.0 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+462 info install jade@0.26.3 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+463 info install diff@1.0.7 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+464 info install debug@2.1.3 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+465 info install mkdirp@0.3.5 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+466 info install glob@3.2.3 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
 467 info installOne commander@2.0.0
-468 verbose installOne of commander to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha not in flight; installing
+468 verbose installOne of commander to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha not in flight; installing
 469 info installOne growl@1.7.0
-470 verbose installOne of growl to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha not in flight; installing
+470 verbose installOne of growl to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha not in flight; installing
 471 info installOne jade@0.26.3
-472 verbose installOne of jade to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha not in flight; installing
+472 verbose installOne of jade to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha not in flight; installing
 473 info installOne diff@1.0.7
-474 verbose installOne of diff to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha not in flight; installing
+474 verbose installOne of diff to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha not in flight; installing
 475 info installOne debug@2.1.3
-476 verbose installOne of debug to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha not in flight; installing
+476 verbose installOne of debug to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha not in flight; installing
 477 info installOne mkdirp@0.3.5
-478 verbose installOne of mkdirp to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha not in flight; installing
+478 verbose installOne of mkdirp to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha not in flight; installing
 479 info installOne glob@3.2.3
-480 verbose installOne of glob to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha not in flight; installing
-481 verbose lock using /home/iraasta/.atom/.apm/_locks/commander-ce81528f017aa510.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/commander
-482 verbose lock using /home/iraasta/.atom/.apm/_locks/growl-2ffc9dde46eb59b2.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/growl
-483 verbose lock using /home/iraasta/.atom/.apm/_locks/jade-ba394da951c51dca.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
-484 verbose lock using /home/iraasta/.atom/.apm/_locks/diff-a4179ac8ebd53c2f.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/diff
-485 verbose lock using /home/iraasta/.atom/.apm/_locks/debug-b278d2876e54a08e.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
-486 verbose lock using /home/iraasta/.atom/.apm/_locks/mkdirp-6865b2639b4b3625.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/mkdirp
-487 silly install write writing commander 2.0.0 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/commander
+480 verbose installOne of glob to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha not in flight; installing
+481 verbose lock using /home/iraasta/.atom/.apm/_locks/commander-ce81528f017aa510.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/commander
+482 verbose lock using /home/iraasta/.atom/.apm/_locks/growl-2ffc9dde46eb59b2.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/growl
+483 verbose lock using /home/iraasta/.atom/.apm/_locks/jade-ba394da951c51dca.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
+484 verbose lock using /home/iraasta/.atom/.apm/_locks/diff-a4179ac8ebd53c2f.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/diff
+485 verbose lock using /home/iraasta/.atom/.apm/_locks/debug-b278d2876e54a08e.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
+486 verbose lock using /home/iraasta/.atom/.apm/_locks/mkdirp-6865b2639b4b3625.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/mkdirp
+487 silly install write writing commander 2.0.0 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/commander
 488 silly cache addNamed cb commander@2.0.0
 489 verbose unbuild node_modules/mocha/node_modules/commander
-490 silly install write writing growl 1.7.0 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/growl
+490 silly install write writing growl 1.7.0 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/growl
 491 silly cache addNamed cb growl@1.7.0
 492 verbose unbuild node_modules/mocha/node_modules/growl
-493 verbose lock using /home/iraasta/.atom/.apm/_locks/glob-f19d4aec8eb1eb97.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
-494 silly install write writing jade 0.26.3 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
+493 verbose lock using /home/iraasta/.atom/.apm/_locks/glob-f19d4aec8eb1eb97.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
+494 silly install write writing jade 0.26.3 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
 495 silly cache addNamed cb jade@0.26.3
 496 verbose unbuild node_modules/mocha/node_modules/jade
-497 silly install write writing diff 1.0.7 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/diff
+497 silly install write writing diff 1.0.7 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/diff
 498 silly cache addNamed cb diff@1.0.7
 499 verbose unbuild node_modules/mocha/node_modules/diff
-500 silly install write writing debug 2.1.3 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
+500 silly install write writing debug 2.1.3 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
 501 silly cache addNamed cb debug@2.1.3
 502 verbose unbuild node_modules/mocha/node_modules/debug
-503 silly install write writing mkdirp 0.3.5 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/mkdirp
+503 silly install write writing mkdirp 0.3.5 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/mkdirp
 504 silly cache addNamed cb mkdirp@0.3.5
 505 verbose unbuild node_modules/mocha/node_modules/mkdirp
-506 silly install write writing glob 3.2.3 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
+506 silly install write writing glob 3.2.3 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
 507 silly cache addNamed cb glob@3.2.3
 508 verbose unbuild node_modules/mocha/node_modules/glob
-509 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/commander
-510 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/growl
-511 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
-512 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/diff
-513 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
-514 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/mkdirp
+509 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/commander
+510 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/growl
+511 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
+512 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/diff
+513 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
+514 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/mkdirp
 515 verbose tar unpack /home/iraasta/.atom/.apm/commander/2.0.0/package.tgz
-516 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/commander
-517 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/commander
+516 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/commander
+517 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/commander
 518 verbose tar unpack /home/iraasta/.atom/.apm/growl/1.7.0/package.tgz
-519 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/growl
-520 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/growl
-521 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
+519 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/growl
+520 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/growl
+521 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
 522 verbose tar unpack /home/iraasta/.atom/.apm/jade/0.26.3/package.tgz
-523 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
-524 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
+523 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
+524 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
 525 verbose tar unpack /home/iraasta/.atom/.apm/diff/1.0.7/package.tgz
-526 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/diff
-527 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/diff
+526 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/diff
+527 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/diff
 528 verbose tar unpack /home/iraasta/.atom/.apm/debug/2.1.3/package.tgz
-529 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
-530 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
+529 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
+530 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
 531 verbose tar unpack /home/iraasta/.atom/.apm/mkdirp/0.3.5/package.tgz
-532 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/mkdirp
-533 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/mkdirp
+532 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/mkdirp
+533 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/mkdirp
 534 silly gunzTarPerm modes [ '775', '664' ]
 535 silly gunzTarPerm modes [ '775', '664' ]
 536 verbose tar unpack /home/iraasta/.atom/.apm/glob/3.2.3/package.tgz
-537 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
-538 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
+537 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
+538 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
 539 silly gunzTarPerm modes [ '775', '664' ]
 540 silly gunzTarPerm modes [ '775', '664' ]
 541 silly gunzTarPerm modes [ '775', '664' ]
@@ -1318,12 +1318,12 @@
 667 silly gunzTarPerm extractEntry test/chmod.js
 668 silly gunzTarPerm modified mode [ 'test/chmod.js', 420, 436 ]
 669 silly install resolved []
-670 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/diff
-671 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/diff
+670 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/diff
+671 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/diff
 672 verbose linkStuff [ false,
 672 verbose linkStuff   false,
 672 verbose linkStuff   false,
-672 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules' ]
+672 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules' ]
 673 info linkStuff diff@1.0.7
 674 verbose linkBins diff@1.0.7
 675 verbose linkMans diff@1.0.7
@@ -1332,24 +1332,24 @@
 678 info install diff@1.0.7
 679 info postinstall diff@1.0.7
 680 silly install resolved []
-681 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/growl
-682 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/growl
+681 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/growl
+682 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/growl
 683 verbose linkStuff [ false,
 683 verbose linkStuff   false,
 683 verbose linkStuff   false,
-683 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules' ]
+683 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules' ]
 684 info linkStuff growl@1.7.0
 685 verbose linkBins growl@1.7.0
 686 verbose linkMans growl@1.7.0
 687 verbose rebuildBundles growl@1.7.0
 688 info install growl@1.7.0
-689 verbose unlock done using /home/iraasta/.atom/.apm/_locks/diff-a4179ac8ebd53c2f.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/diff
+689 verbose unlock done using /home/iraasta/.atom/.apm/_locks/diff-a4179ac8ebd53c2f.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/diff
 690 info postinstall growl@1.7.0
 691 silly gunzTarPerm extractEntry test/umask_sync.js
 692 silly gunzTarPerm modified mode [ 'test/umask_sync.js', 420, 436 ]
 693 silly gunzTarPerm extractEntry test/return_sync.js
 694 silly gunzTarPerm modified mode [ 'test/return_sync.js', 420, 436 ]
-695 verbose unlock done using /home/iraasta/.atom/.apm/_locks/growl-2ffc9dde46eb59b2.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/growl
+695 verbose unlock done using /home/iraasta/.atom/.apm/_locks/growl-2ffc9dde46eb59b2.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/growl
 696 silly gunzTarPerm extractEntry test/globstar-match.js
 697 silly gunzTarPerm modified mode [ 'test/globstar-match.js', 420, 436 ]
 698 silly gunzTarPerm extractEntry test/mkdirp.js
@@ -1362,12 +1362,12 @@
 705 silly gunzTarPerm extractEntry test/bash-comparison.js
 706 silly gunzTarPerm modified mode [ 'test/bash-comparison.js', 420, 436 ]
 707 silly install resolved []
-708 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/commander
-709 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/commander
+708 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/commander
+709 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/commander
 710 verbose linkStuff [ false,
 710 verbose linkStuff   false,
 710 verbose linkStuff   false,
-710 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules' ]
+710 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules' ]
 711 info linkStuff commander@2.0.0
 712 verbose linkBins commander@2.0.0
 713 verbose linkMans commander@2.0.0
@@ -1380,7 +1380,7 @@
 720 silly gunzTarPerm modified mode [ 'test/pause-resume.js', 420, 436 ]
 721 silly gunzTarPerm extractEntry test/root-nomount.js
 722 silly gunzTarPerm modified mode [ 'test/root-nomount.js', 420, 436 ]
-723 verbose unlock done using /home/iraasta/.atom/.apm/_locks/commander-ce81528f017aa510.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/commander
+723 verbose unlock done using /home/iraasta/.atom/.apm/_locks/commander-ce81528f017aa510.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/commander
 724 silly gunzTarPerm extractEntry test/root.js
 725 silly gunzTarPerm modified mode [ 'test/root.js', 420, 436 ]
 726 silly gunzTarPerm extractEntry test/zz-cleanup.js
@@ -1420,19 +1420,19 @@
 755 silly gunzTarPerm modified mode [ 'lib/compiler.js', 420, 436 ]
 756 info preinstall mkdirp@0.3.5
 757 silly install resolved []
-758 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/mkdirp
-759 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/mkdirp
+758 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/mkdirp
+759 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/mkdirp
 760 verbose linkStuff [ false,
 760 verbose linkStuff   false,
 760 verbose linkStuff   false,
-760 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules' ]
+760 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules' ]
 761 info linkStuff mkdirp@0.3.5
 762 verbose linkBins mkdirp@0.3.5
 763 verbose linkMans mkdirp@0.3.5
 764 verbose rebuildBundles mkdirp@0.3.5
 765 info install mkdirp@0.3.5
 766 info postinstall mkdirp@0.3.5
-767 verbose unlock done using /home/iraasta/.atom/.apm/_locks/mkdirp-6865b2639b4b3625.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/mkdirp
+767 verbose unlock done using /home/iraasta/.atom/.apm/_locks/mkdirp-6865b2639b4b3625.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/mkdirp
 768 silly gunzTarPerm extractEntry lib/filters.js
 769 silly gunzTarPerm modified mode [ 'lib/filters.js', 420, 436 ]
 770 silly gunzTarPerm extractEntry lib/inline-tags.js
@@ -1663,28 +1663,28 @@
 908 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
 908 silly install resolved     readme: 'ERROR: No README data found!',
 908 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp' } ]
-909 info install commander@0.6.1 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
-910 info install mkdirp@0.3.0 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
+909 info install commander@0.6.1 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
+910 info install mkdirp@0.3.0 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
 911 info installOne commander@0.6.1
-912 verbose installOne of commander to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade not in flight; installing
+912 verbose installOne of commander to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade not in flight; installing
 913 info installOne mkdirp@0.3.0
-914 verbose installOne of mkdirp to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade not in flight; installing
-915 verbose lock using /home/iraasta/.atom/.apm/_locks/commander-004b6beb17b4e027.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
-916 verbose lock using /home/iraasta/.atom/.apm/_locks/mkdirp-7658b8c3ee37eb6d.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
-917 silly install write writing commander 0.6.1 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
+914 verbose installOne of mkdirp to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade not in flight; installing
+915 verbose lock using /home/iraasta/.atom/.apm/_locks/commander-004b6beb17b4e027.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
+916 verbose lock using /home/iraasta/.atom/.apm/_locks/mkdirp-7658b8c3ee37eb6d.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+917 silly install write writing commander 0.6.1 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
 918 silly cache addNamed cb commander@0.6.1
 919 verbose unbuild node_modules/mocha/node_modules/jade/node_modules/commander
-920 silly install write writing mkdirp 0.3.0 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+920 silly install write writing mkdirp 0.3.0 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
 921 silly cache addNamed cb mkdirp@0.3.0
 922 verbose unbuild node_modules/mocha/node_modules/jade/node_modules/mkdirp
-923 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
-924 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+923 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
+924 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
 925 verbose tar unpack /home/iraasta/.atom/.apm/commander/0.6.1/package.tgz
-926 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
-927 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
+926 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
+927 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
 928 verbose tar unpack /home/iraasta/.atom/.apm/mkdirp/0.3.0/package.tgz
-929 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
-930 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+929 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+930 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
 931 silly gunzTarPerm modes [ '775', '664' ]
 932 silly gunzTarPerm modes [ '775', '664' ]
 933 silly gunzTarPerm extractEntry .npmignore
@@ -1747,52 +1747,52 @@
 990 silly gunzTarPerm modified mode [ 'test/chmod.js', 420, 436 ]
 991 info preinstall commander@0.6.1
 992 silly install resolved []
-993 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
-994 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
+993 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
+994 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
 995 verbose linkStuff [ false,
 995 verbose linkStuff   false,
 995 verbose linkStuff   false,
-995 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules' ]
+995 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules' ]
 996 info linkStuff commander@0.6.1
 997 verbose linkBins commander@0.6.1
 998 verbose linkMans commander@0.6.1
 999 verbose rebuildBundles commander@0.6.1
 1000 info install commander@0.6.1
 1001 info postinstall commander@0.6.1
-1002 verbose unlock done using /home/iraasta/.atom/.apm/_locks/commander-004b6beb17b4e027.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
+1002 verbose unlock done using /home/iraasta/.atom/.apm/_locks/commander-004b6beb17b4e027.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/commander
 1003 info preinstall mkdirp@0.3.0
 1004 silly install resolved []
-1005 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
-1006 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+1005 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+1006 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
 1007 verbose linkStuff [ false,
 1007 verbose linkStuff   false,
 1007 verbose linkStuff   false,
-1007 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules' ]
+1007 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules' ]
 1008 info linkStuff mkdirp@0.3.0
 1009 verbose linkBins mkdirp@0.3.0
 1010 verbose linkMans mkdirp@0.3.0
 1011 verbose rebuildBundles mkdirp@0.3.0
 1012 info install mkdirp@0.3.0
 1013 info postinstall mkdirp@0.3.0
-1014 verbose unlock done using /home/iraasta/.atom/.apm/_locks/mkdirp-7658b8c3ee37eb6d.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
-1015 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
-1016 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
+1014 verbose unlock done using /home/iraasta/.atom/.apm/_locks/mkdirp-7658b8c3ee37eb6d.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+1015 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
+1016 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
 1017 verbose linkStuff [ false,
 1017 verbose linkStuff   false,
 1017 verbose linkStuff   false,
-1017 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules' ]
+1017 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules' ]
 1018 info linkStuff jade@0.26.3
 1019 verbose linkBins jade@0.26.3
 1020 verbose link bins [ { jade: './bin/jade' },
-1020 verbose link bins   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/.bin',
+1020 verbose link bins   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/.bin',
 1020 verbose link bins   false ]
 1021 verbose linkMans jade@0.26.3
 1022 verbose rebuildBundles jade@0.26.3
 1023 verbose rebuildBundles [ 'commander', 'mkdirp' ]
-1024 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/.bin/jade
+1024 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/.bin/jade
 1025 info install jade@0.26.3
 1026 info postinstall jade@0.26.3
-1027 verbose unlock done using /home/iraasta/.atom/.apm/_locks/jade-ba394da951c51dca.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/jade
+1027 verbose unlock done using /home/iraasta/.atom/.apm/_locks/jade-ba394da951c51dca.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/jade
 1028 http 304 https://registry.npmjs.org/ms
 1029 silly get cb [ 304,
 1029 silly get   { date: 'Tue, 24 Mar 2015 14:38:14 GMT',
@@ -1838,17 +1838,17 @@
 1035 silly install resolved     directories: {},
 1035 silly install resolved     _resolved: 'https://registry.npmjs.org/ms/-/ms-0.7.0.tgz',
 1035 silly install resolved     readme: 'ERROR: No README data found!' } ]
-1036 info install ms@0.7.0 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
+1036 info install ms@0.7.0 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
 1037 info installOne ms@0.7.0
-1038 verbose installOne of ms to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug not in flight; installing
-1039 verbose lock using /home/iraasta/.atom/.apm/_locks/ms-a1f017babef17fa5.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
-1040 silly install write writing ms 0.7.0 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
+1038 verbose installOne of ms to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug not in flight; installing
+1039 verbose lock using /home/iraasta/.atom/.apm/_locks/ms-a1f017babef17fa5.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
+1040 silly install write writing ms 0.7.0 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
 1041 silly cache addNamed cb ms@0.7.0
 1042 verbose unbuild node_modules/mocha/node_modules/debug/node_modules/ms
-1043 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
+1043 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
 1044 verbose tar unpack /home/iraasta/.atom/.apm/ms/0.7.0/package.tgz
-1045 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
-1046 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
+1045 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
+1046 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
 1047 silly gunzTarPerm modes [ '775', '664' ]
 1048 silly gunzTarPerm extractEntry package.json
 1049 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
@@ -1900,12 +1900,12 @@
 1065 verbose etag https://registry.npmjs.org/minimatch from cache
 1066 verbose get saving minimatch to /home/iraasta/.atom/.apm/registry.npmjs.org/minimatch/.cache.json
 1067 silly install resolved []
-1068 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
-1069 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
+1068 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
+1069 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
 1070 verbose linkStuff [ false,
 1070 verbose linkStuff   false,
 1070 verbose linkStuff   false,
-1070 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules' ]
+1070 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules' ]
 1071 info linkStuff ms@0.7.0
 1072 verbose linkBins ms@0.7.0
 1073 verbose linkMans ms@0.7.0
@@ -1986,13 +1986,13 @@
 1084 verbose addNamed minimatch@0.2.14
 1085 silly addNamed semver.valid 0.2.14
 1086 silly addNamed semver.validRange 0.2.14
-1087 verbose unlock done using /home/iraasta/.atom/.apm/_locks/ms-a1f017babef17fa5.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
-1088 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
-1089 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
+1087 verbose unlock done using /home/iraasta/.atom/.apm/_locks/ms-a1f017babef17fa5.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug/node_modules/ms
+1088 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
+1089 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
 1090 verbose linkStuff [ false,
 1090 verbose linkStuff   false,
 1090 verbose linkStuff   false,
-1090 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules' ]
+1090 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules' ]
 1091 info linkStuff debug@2.1.3
 1092 verbose linkBins debug@2.1.3
 1093 verbose linkMans debug@2.1.3
@@ -2004,7 +2004,7 @@
 1099 verbose afterAdd /home/iraasta/.atom/.apm/graceful-fs/2.0.3/package/package.json not in flight; writing
 1100 silly cache afterAdd minimatch@0.2.14
 1101 verbose afterAdd /home/iraasta/.atom/.apm/minimatch/0.2.14/package/package.json not in flight; writing
-1102 verbose unlock done using /home/iraasta/.atom/.apm/_locks/debug-b278d2876e54a08e.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/debug
+1102 verbose unlock done using /home/iraasta/.atom/.apm/_locks/debug-b278d2876e54a08e.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/debug
 1103 verbose afterAdd /home/iraasta/.atom/.apm/minimatch/0.2.14/package/package.json written
 1104 verbose afterAdd /home/iraasta/.atom/.apm/graceful-fs/2.0.3/package/package.json written
 1105 http 304 https://registry.npmjs.org/inherits
@@ -2138,41 +2138,41 @@
 1117 silly install resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz',
 1117 silly install resolved     readme: 'ERROR: No README data found!',
 1117 silly install resolved     homepage: 'https://github.com/isaacs/inherits' } ]
-1118 info install minimatch@0.2.14 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
-1119 info install graceful-fs@2.0.3 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
-1120 info install inherits@2.0.1 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
+1118 info install minimatch@0.2.14 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
+1119 info install graceful-fs@2.0.3 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
+1120 info install inherits@2.0.1 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
 1121 info installOne minimatch@0.2.14
-1122 verbose installOne of minimatch to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob not in flight; installing
+1122 verbose installOne of minimatch to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob not in flight; installing
 1123 info installOne graceful-fs@2.0.3
-1124 verbose installOne of graceful-fs to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob not in flight; installing
+1124 verbose installOne of graceful-fs to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob not in flight; installing
 1125 info installOne inherits@2.0.1
-1126 verbose installOne of inherits to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob not in flight; installing
-1127 verbose lock using /home/iraasta/.atom/.apm/_locks/minimatch-43e8c34dd8b0fb5a.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
-1128 verbose lock using /home/iraasta/.atom/.apm/_locks/graceful-fs-1f4575cf09480518.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
-1129 silly install write writing minimatch 0.2.14 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1126 verbose installOne of inherits to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob not in flight; installing
+1127 verbose lock using /home/iraasta/.atom/.apm/_locks/minimatch-43e8c34dd8b0fb5a.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1128 verbose lock using /home/iraasta/.atom/.apm/_locks/graceful-fs-1f4575cf09480518.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+1129 silly install write writing minimatch 0.2.14 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
 1130 silly cache addNamed cb minimatch@0.2.14
 1131 verbose unbuild node_modules/mocha/node_modules/glob/node_modules/minimatch
-1132 silly install write writing graceful-fs 2.0.3 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+1132 silly install write writing graceful-fs 2.0.3 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
 1133 silly cache addNamed cb graceful-fs@2.0.3
 1134 verbose unbuild node_modules/mocha/node_modules/glob/node_modules/graceful-fs
-1135 verbose lock using /home/iraasta/.atom/.apm/_locks/inherits-8d27e178f3a3c453.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
-1136 silly install write writing inherits 2.0.1 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
+1135 verbose lock using /home/iraasta/.atom/.apm/_locks/inherits-8d27e178f3a3c453.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
+1136 silly install write writing inherits 2.0.1 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
 1137 silly cache addNamed cb inherits@2.0.1
 1138 verbose unbuild node_modules/mocha/node_modules/glob/node_modules/inherits
-1139 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
-1140 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+1139 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1140 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
 1141 verbose tar unpack /home/iraasta/.atom/.apm/minimatch/0.2.14/package.tgz
-1142 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
-1143 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1142 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1143 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
 1144 verbose tar unpack /home/iraasta/.atom/.apm/graceful-fs/2.0.3/package.tgz
-1145 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
-1146 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
-1147 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
+1145 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+1146 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+1147 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
 1148 silly gunzTarPerm modes [ '775', '664' ]
 1149 silly gunzTarPerm modes [ '775', '664' ]
 1150 verbose tar unpack /home/iraasta/.atom/.apm/inherits/2.0.1/package.tgz
-1151 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
-1152 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
+1151 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
+1152 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
 1153 silly gunzTarPerm modes [ '775', '664' ]
 1154 silly gunzTarPerm extractEntry package.json
 1155 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
@@ -2224,34 +2224,34 @@
 1201 silly gunzTarPerm modified mode [ 'test/extglob-ending-with-state-char.js', 420, 436 ]
 1202 info preinstall inherits@2.0.1
 1203 silly install resolved []
-1204 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
-1205 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
+1204 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
+1205 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
 1206 verbose linkStuff [ false,
 1206 verbose linkStuff   false,
 1206 verbose linkStuff   false,
-1206 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules' ]
+1206 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules' ]
 1207 info linkStuff inherits@2.0.1
 1208 verbose linkBins inherits@2.0.1
 1209 verbose linkMans inherits@2.0.1
 1210 verbose rebuildBundles inherits@2.0.1
 1211 info install inherits@2.0.1
 1212 info postinstall inherits@2.0.1
-1213 verbose unlock done using /home/iraasta/.atom/.apm/_locks/inherits-8d27e178f3a3c453.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
+1213 verbose unlock done using /home/iraasta/.atom/.apm/_locks/inherits-8d27e178f3a3c453.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/inherits
 1214 info preinstall graceful-fs@2.0.3
 1215 silly install resolved []
-1216 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
-1217 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+1216 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+1217 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
 1218 verbose linkStuff [ false,
 1218 verbose linkStuff   false,
 1218 verbose linkStuff   false,
-1218 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules' ]
+1218 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules' ]
 1219 info linkStuff graceful-fs@2.0.3
 1220 verbose linkBins graceful-fs@2.0.3
 1221 verbose linkMans graceful-fs@2.0.3
 1222 verbose rebuildBundles graceful-fs@2.0.3
 1223 info install graceful-fs@2.0.3
 1224 info postinstall graceful-fs@2.0.3
-1225 verbose unlock done using /home/iraasta/.atom/.apm/_locks/graceful-fs-1f4575cf09480518.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+1225 verbose unlock done using /home/iraasta/.atom/.apm/_locks/graceful-fs-1f4575cf09480518.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
 1226 info preinstall minimatch@0.2.14
 1227 silly prepareForInstallMany adding lru-cache@2 from minimatch dependencies
 1228 silly prepareForInstallMany adding sigmund@~1.0.0 from minimatch dependencies
@@ -2429,28 +2429,28 @@
 1287 silly install resolved     _from: 'sigmund@>=1.0.0 <1.1.0',
 1287 silly install resolved     bugs: { url: 'https://github.com/isaacs/sigmund/issues' },
 1287 silly install resolved     homepage: 'https://github.com/isaacs/sigmund' } ]
-1288 info install lru-cache@2.5.0 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
-1289 info install sigmund@1.0.0 into /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1288 info install lru-cache@2.5.0 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1289 info install sigmund@1.0.0 into /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
 1290 info installOne lru-cache@2.5.0
-1291 verbose installOne of lru-cache to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch not in flight; installing
+1291 verbose installOne of lru-cache to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch not in flight; installing
 1292 info installOne sigmund@1.0.0
-1293 verbose installOne of sigmund to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch not in flight; installing
-1294 verbose lock using /home/iraasta/.atom/.apm/_locks/lru-cache-95aeaa7406faa97c.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
-1295 verbose lock using /home/iraasta/.atom/.apm/_locks/sigmund-c99fa891d5dc9f8c.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
-1296 silly install write writing lru-cache 2.5.0 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1293 verbose installOne of sigmund to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch not in flight; installing
+1294 verbose lock using /home/iraasta/.atom/.apm/_locks/lru-cache-95aeaa7406faa97c.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1295 verbose lock using /home/iraasta/.atom/.apm/_locks/sigmund-c99fa891d5dc9f8c.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1296 silly install write writing lru-cache 2.5.0 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
 1297 silly cache addNamed cb lru-cache@2.5.0
 1298 verbose unbuild node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
-1299 silly install write writing sigmund 1.0.0 to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1299 silly install write writing sigmund 1.0.0 to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
 1300 silly cache addNamed cb sigmund@1.0.0
 1301 verbose unbuild node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
-1302 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
-1303 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1302 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1303 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
 1304 verbose tar unpack /home/iraasta/.atom/.apm/lru-cache/2.5.0/package.tgz
-1305 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
-1306 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1305 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1306 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
 1307 verbose tar unpack /home/iraasta/.atom/.apm/sigmund/1.0.0/package.tgz
-1308 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
-1309 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1308 verbose tar unpacking to /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1309 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
 1310 silly gunzTarPerm modes [ '775', '664' ]
 1311 silly gunzTarPerm modes [ '775', '664' ]
 1312 silly gunzTarPerm extractEntry package.json
@@ -2485,40 +2485,40 @@
 1341 silly gunzTarPerm modified mode [ 'test/basic.js', 420, 436 ]
 1342 info preinstall sigmund@1.0.0
 1343 silly install resolved []
-1344 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
-1345 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1344 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1345 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
 1346 verbose linkStuff [ false,
 1346 verbose linkStuff   false,
 1346 verbose linkStuff   false,
-1346 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules' ]
+1346 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules' ]
 1347 info linkStuff sigmund@1.0.0
 1348 verbose linkBins sigmund@1.0.0
 1349 verbose linkMans sigmund@1.0.0
 1350 verbose rebuildBundles sigmund@1.0.0
 1351 info install sigmund@1.0.0
 1352 info postinstall sigmund@1.0.0
-1353 verbose unlock done using /home/iraasta/.atom/.apm/_locks/sigmund-c99fa891d5dc9f8c.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1353 verbose unlock done using /home/iraasta/.atom/.apm/_locks/sigmund-c99fa891d5dc9f8c.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
 1354 info preinstall lru-cache@2.5.0
 1355 silly install resolved []
-1356 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
-1357 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1356 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1357 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
 1358 verbose linkStuff [ false,
 1358 verbose linkStuff   false,
 1358 verbose linkStuff   false,
-1358 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules' ]
+1358 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules' ]
 1359 info linkStuff lru-cache@2.5.0
 1360 verbose linkBins lru-cache@2.5.0
 1361 verbose linkMans lru-cache@2.5.0
 1362 verbose rebuildBundles lru-cache@2.5.0
 1363 info install lru-cache@2.5.0
 1364 info postinstall lru-cache@2.5.0
-1365 verbose unlock done using /home/iraasta/.atom/.apm/_locks/lru-cache-95aeaa7406faa97c.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
-1366 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
-1367 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1365 verbose unlock done using /home/iraasta/.atom/.apm/_locks/lru-cache-95aeaa7406faa97c.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1366 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1367 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
 1368 verbose linkStuff [ false,
 1368 verbose linkStuff   false,
 1368 verbose linkStuff   false,
-1368 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules' ]
+1368 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules' ]
 1369 info linkStuff minimatch@0.2.14
 1370 verbose linkBins minimatch@0.2.14
 1371 verbose linkMans minimatch@0.2.14
@@ -2526,13 +2526,13 @@
 1373 verbose rebuildBundles [ 'lru-cache', 'sigmund' ]
 1374 info install minimatch@0.2.14
 1375 info postinstall minimatch@0.2.14
-1376 verbose unlock done using /home/iraasta/.atom/.apm/_locks/minimatch-43e8c34dd8b0fb5a.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
-1377 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
-1378 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
+1376 verbose unlock done using /home/iraasta/.atom/.apm/_locks/minimatch-43e8c34dd8b0fb5a.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1377 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
+1378 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
 1379 verbose linkStuff [ false,
 1379 verbose linkStuff   false,
 1379 verbose linkStuff   false,
-1379 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules' ]
+1379 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules' ]
 1380 info linkStuff glob@3.2.3
 1381 verbose linkBins glob@3.2.3
 1382 verbose linkMans glob@3.2.3
@@ -2540,17 +2540,17 @@
 1384 verbose rebuildBundles [ 'graceful-fs', 'inherits', 'minimatch' ]
 1385 info install glob@3.2.3
 1386 info postinstall glob@3.2.3
-1387 verbose unlock done using /home/iraasta/.atom/.apm/_locks/glob-f19d4aec8eb1eb97.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha/node_modules/glob
-1388 verbose about to build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-1389 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
+1387 verbose unlock done using /home/iraasta/.atom/.apm/_locks/glob-f19d4aec8eb1eb97.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha/node_modules/glob
+1388 verbose about to build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+1389 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
 1390 verbose linkStuff [ false,
 1390 verbose linkStuff   false,
 1390 verbose linkStuff   false,
-1390 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1390 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1391 info linkStuff mocha@1.17.1
 1392 verbose linkBins mocha@1.17.1
 1393 verbose link bins [ { mocha: './bin/mocha', _mocha: './bin/_mocha' },
-1393 verbose link bins   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/.bin',
+1393 verbose link bins   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/.bin',
 1393 verbose link bins   false ]
 1394 verbose linkMans mocha@1.17.1
 1395 verbose rebuildBundles mocha@1.17.1
@@ -2562,16 +2562,16 @@
 1396 verbose rebuildBundles   'growl',
 1396 verbose rebuildBundles   'jade',
 1396 verbose rebuildBundles   'mkdirp' ]
-1397 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/.bin/mocha
-1398 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/.bin/_mocha
+1397 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/.bin/mocha
+1398 verbose gentlyRm vacuuming /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/.bin/_mocha
 1399 info install mocha@1.17.1
 1400 info postinstall mocha@1.17.1
-1401 verbose unlock done using /home/iraasta/.atom/.apm/_locks/mocha-9f1e6f8cd615b646.lock for /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mocha
-1402 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server
+1401 verbose unlock done using /home/iraasta/.atom/.apm/_locks/mocha-9f1e6f8cd615b646.lock for /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mocha
+1402 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server
 1403 verbose linkStuff [ false,
 1403 verbose linkStuff   false,
 1403 verbose linkStuff   false,
-1403 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib' ]
+1403 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib' ]
 1404 info linkStuff pty.js@0.2.6
 1405 verbose linkBins pty.js@0.2.6
 1406 verbose linkMans pty.js@0.2.6
@@ -2594,26 +2594,26 @@
 1408 verbose rebuildBundles   'npm-debug.log',
 1408 verbose rebuildBundles   'pty.js',
 1408 verbose rebuildBundles   'socket.io' ]
-1409 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/amd-loader
-1410 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/amd-loader
+1409 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/amd-loader
+1410 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/amd-loader
 1411 info preinstall amd-loader@0.0.5
 1412 verbose linkStuff [ false,
 1412 verbose linkStuff   false,
 1412 verbose linkStuff   false,
-1412 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1412 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1413 info linkStuff amd-loader@0.0.5
 1414 verbose linkBins amd-loader@0.0.5
 1415 verbose linkMans amd-loader@0.0.5
 1416 verbose rebuildBundles amd-loader@0.0.5
 1417 info install amd-loader@0.0.5
 1418 info postinstall amd-loader@0.0.5
-1419 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/architect-build
-1420 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/architect-build
+1419 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/architect-build
+1420 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/architect-build
 1421 info preinstall architect-build@0.1.0
 1422 verbose linkStuff [ false,
 1422 verbose linkStuff   false,
 1422 verbose linkStuff   false,
-1422 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1422 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1423 info linkStuff architect-build@0.1.0
 1424 verbose linkBins architect-build@0.1.0
 1425 verbose linkMans architect-build@0.1.0
@@ -2621,39 +2621,39 @@
 1427 verbose rebuildBundles [ '.bin', 'mkdirp', 'through', 'uglify-js' ]
 1428 info install architect-build@0.1.0
 1429 info postinstall architect-build@0.1.0
-1430 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/async
-1431 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/async
+1430 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/async
+1431 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/async
 1432 info preinstall async@0.9.0
 1433 verbose linkStuff [ false,
 1433 verbose linkStuff   false,
 1433 verbose linkStuff   false,
-1433 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1433 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1434 info linkStuff async@0.9.0
 1435 verbose linkBins async@0.9.0
 1436 verbose linkMans async@0.9.0
 1437 verbose rebuildBundles async@0.9.0
 1438 info install async@0.9.0
 1439 info postinstall async@0.9.0
-1440 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/asyncjs
-1441 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/asyncjs
+1440 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/asyncjs
+1441 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/asyncjs
 1442 info preinstall asyncjs@0.0.9
 1443 verbose linkStuff [ false,
 1443 verbose linkStuff   false,
 1443 verbose linkStuff   false,
-1443 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1443 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1444 info linkStuff asyncjs@0.0.9
 1445 verbose linkBins asyncjs@0.0.9
 1446 verbose linkMans asyncjs@0.0.9
 1447 verbose rebuildBundles asyncjs@0.0.9
 1448 info install asyncjs@0.0.9
 1449 info postinstall asyncjs@0.0.9
-1450 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/chai
-1451 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/chai
+1450 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/chai
+1451 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/chai
 1452 info preinstall chai@2.1.2
 1453 verbose linkStuff [ false,
 1453 verbose linkStuff   false,
 1453 verbose linkStuff   false,
-1453 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1453 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1454 info linkStuff chai@2.1.2
 1455 verbose linkBins chai@2.1.2
 1456 verbose linkMans chai@2.1.2
@@ -2661,13 +2661,13 @@
 1458 verbose rebuildBundles [ 'assertion-error', 'deep-eql' ]
 1459 info install chai@2.1.2
 1460 info postinstall chai@2.1.2
-1461 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/dryice
-1462 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/dryice
+1461 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/dryice
+1462 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/dryice
 1463 info preinstall dryice@0.4.11
 1464 verbose linkStuff [ false,
 1464 verbose linkStuff   false,
 1464 verbose linkStuff   false,
-1464 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1464 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1465 info linkStuff dryice@0.4.11
 1466 verbose linkBins dryice@0.4.11
 1467 verbose linkMans dryice@0.4.11
@@ -2675,13 +2675,13 @@
 1469 verbose rebuildBundles [ '.bin', 'uglify-js' ]
 1470 info install dryice@0.4.11
 1471 info postinstall dryice@0.4.11
-1472 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/jsdom
-1473 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/jsdom
+1472 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/jsdom
+1473 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/jsdom
 1474 info preinstall jsdom@0.2.19
 1475 verbose linkStuff [ false,
 1475 verbose linkStuff   false,
 1475 verbose linkStuff   false,
-1475 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1475 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1476 info linkStuff jsdom@0.2.19
 1477 verbose linkBins jsdom@0.2.19
 1478 verbose linkMans jsdom@0.2.19
@@ -2689,39 +2689,39 @@
 1480 verbose rebuildBundles [ 'contextify', 'cssom', 'cssstyle', 'htmlparser', 'request' ]
 1481 info install jsdom@0.2.19
 1482 info postinstall jsdom@0.2.19
-1483 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/lodash
-1484 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/lodash
+1483 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/lodash
+1484 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/lodash
 1485 info preinstall lodash@3.5.0
 1486 verbose linkStuff [ false,
 1486 verbose linkStuff   false,
 1486 verbose linkStuff   false,
-1486 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1486 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1487 info linkStuff lodash@3.5.0
 1488 verbose linkBins lodash@3.5.0
 1489 verbose linkMans lodash@3.5.0
 1490 verbose rebuildBundles lodash@3.5.0
 1491 info install lodash@3.5.0
 1492 info postinstall lodash@3.5.0
-1493 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mime
-1494 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/mime
+1493 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mime
+1494 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/mime
 1495 info preinstall mime@1.2.11
 1496 verbose linkStuff [ false,
 1496 verbose linkStuff   false,
 1496 verbose linkStuff   false,
-1496 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1496 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1497 info linkStuff mime@1.2.11
 1498 verbose linkBins mime@1.2.11
 1499 verbose linkMans mime@1.2.11
 1500 verbose rebuildBundles mime@1.2.11
 1501 info install mime@1.2.11
 1502 info postinstall mime@1.2.11
-1503 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nedb
-1504 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/nedb
+1503 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nedb
+1504 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/nedb
 1505 info preinstall nedb@1.1.1
 1506 verbose linkStuff [ false,
 1506 verbose linkStuff   false,
 1506 verbose linkStuff   false,
-1506 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1506 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1507 info linkStuff nedb@1.1.1
 1508 verbose linkBins nedb@1.1.1
 1509 verbose linkMans nedb@1.1.1
@@ -2729,27 +2729,27 @@
 1511 verbose rebuildBundles [ 'async', 'binary-search-tree', 'mkdirp', 'underscore' ]
 1512 info install nedb@1.1.1
 1513 info postinstall nedb@1.1.1
-1514 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/node-dir
-1515 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/node-dir
+1514 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/node-dir
+1515 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/node-dir
 1516 info preinstall node-dir@0.1.6
 1517 verbose linkStuff [ false,
 1517 verbose linkStuff   false,
 1517 verbose linkStuff   false,
-1517 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1517 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1518 info linkStuff node-dir@0.1.6
 1519 verbose linkBins node-dir@0.1.6
 1520 verbose linkMans node-dir@0.1.6
 1521 verbose rebuildBundles node-dir@0.1.6
 1522 info install node-dir@0.1.6
 1523 info postinstall node-dir@0.1.6
-1524 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/npm-debug.log
-1525 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/pty.js
-1526 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/pty.js
+1524 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/npm-debug.log
+1525 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/pty.js
+1526 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/pty.js
 1527 info preinstall pty.js@0.2.6
 1528 verbose linkStuff [ false,
 1528 verbose linkStuff   false,
 1528 verbose linkStuff   false,
-1528 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1528 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1529 info linkStuff pty.js@0.2.6
 1530 verbose linkBins pty.js@0.2.6
 1531 verbose linkMans pty.js@0.2.6
@@ -2758,13 +2758,13 @@
 1534 info install pty.js@0.2.6
 1535 verbose unsafe-perm in lifecycle true
 1536 info postinstall pty.js@0.2.6
-1537 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/socket.io
-1538 info build /home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules/socket.io
+1537 verbose rebuild bundle /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/socket.io
+1538 info build /home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules/socket.io
 1539 info preinstall socket.io@1.3.5
 1540 verbose linkStuff [ false,
 1540 verbose linkStuff   false,
 1540 verbose linkStuff   false,
-1540 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-elixir/lib/server/node_modules' ]
+1540 verbose linkStuff   '/home/iraasta/.atom/packages/autocomplete-erlang/lib/server/node_modules' ]
 1541 info linkStuff socket.io@1.3.5
 1542 verbose linkBins socket.io@1.3.5
 1543 verbose linkMans socket.io@1.3.5
@@ -2789,7 +2789,7 @@
 1551 verbose stack     at maybeClose (child_process.js:766:16)
 1551 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
 1552 verbose pkgid pty.js@0.2.6
-1553 verbose cwd /home/iraasta/.atom/packages/autocomplete-elixir/lib/server
+1553 verbose cwd /home/iraasta/.atom/packages/autocomplete-erlang/lib/server
 1554 error Linux 3.13.0-46-generic
 1555 error argv "/usr/share/atom/resources/app/apm/bin/node" "/usr/share/atom/resources/app/apm/node_modules/npm/bin/npm-cli.js" "--globalconfig" "/home/iraasta/.atom/.apm/.apmrc" "--userconfig" "/home/iraasta/.atom/.apmrc" "install" "--target=0.21.0" "--arch=x64"
 1556 error node v0.10.35

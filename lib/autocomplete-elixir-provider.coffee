@@ -11,7 +11,6 @@ class RsenseProvider
 
   requestHandler: (options) ->
     return new Promise (resolve) =>
-      # rsense expects 1-based positions
       row = options.cursor.getBufferRow()
       col = options.cursor.getBufferColumn()
 
