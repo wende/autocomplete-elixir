@@ -9,6 +9,7 @@ class RsenseProvider
   constructor: ->
     @rsenseClient = new RsenseClient()
 
+
   requestHandler: (options) ->
     return new Promise (resolve) =>
       row = options.cursor.getBufferRow()
