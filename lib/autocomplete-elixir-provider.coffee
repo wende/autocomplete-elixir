@@ -41,9 +41,15 @@ class RsenseProvider
           while ++i <= count then word += "${#{i}:#{i}}" + (if i != count then "," else ")")
           word += "${#{count+1}:_}"
         [..., last] = prefix.split(/(:|\.)/)
+        [first..., last] = prefix.split(".")
+        first = [prefix] if !first.length
+        console.log "prefix: " + prefix
+        console.log "word: " + completion.name
+        console.log "first: " + first
+        console.log "length: " + completions.length
         suggestion =
           snippet: word
-          prefix: last
+          prefix: if completions.length != 1 then last else first.join(".")
           label: "#{completion.qualified_name}"
         suggestions.push(suggestion)
       return suggestions
