@@ -43,10 +43,6 @@ class RsenseProvider
         [..., last] = prefix.split(/(:|\.)/)
         [first..., last] = prefix.split(".")
         first = [prefix] if !first.length
-        console.log "prefix: " + prefix
-        console.log "word: " + completion.name
-        console.log "first: " + first
-        console.log "length: " + completions.length
         suggestion =
           snippet: word
           prefix: if completions.length != 1 then last else first.join(".")
