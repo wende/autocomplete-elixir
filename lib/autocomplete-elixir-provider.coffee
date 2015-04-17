@@ -39,9 +39,9 @@ class RsenseProvider
         i = 0
         while ++i <= count
           word += "${#{i}:#{i}}" + (if i != count then "," else "")
-        if func then word += ")"
-        word += "${#{count+1}:\u0020}"
-        console.log {prefix: prefix, word: word}
+        if func
+          word += ")"
+          word += "${#{count+1}:\u0020}"
         suggestion =
           snippet: if completions.length > 1 then word else prefix + word
           prefix:  if completions.length > 1 then "" else prefix
