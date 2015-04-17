@@ -15,5 +15,10 @@ class RsenseClient
 
   checkCompletion: (editor, buffer, row, column, prefix, callback) ->
     autocomplete.getAutocompletion prefix, (result) ->
-      callback(result.map (a)-> {name: a, qualified_name:a, kind:"elixir"})
+      console.log result
+      result = if result.one
+         {result: [result.one], one: true}
+        else
+          {result: result.multi, one: false}
+      callback(result.result.map (a)-> {continuation: result.one,name: a, qualified_name:a, kind:"elixir"})
     return []

@@ -31,8 +31,10 @@ class RsenseProvider
     if completions?
       suggestions = []
       for completion in completions when completion.name isnt prefix
+        one = completion.continuation
         kind = completion.kind.toLowerCase()
         word = completion.name.trim()
+        label = completion.qualified_name
         count = parseInt(/\d+$/.exec(word)) || 0;
         func = /\d+$/.test(word)
         if func then word = word.split("/")[0] + "("
@@ -42,10 +44,12 @@ class RsenseProvider
         if func
           word += ")"
           word += "${#{count+1}:\u0020}"
+
+        [..., last] = prefix.split(".")
         suggestion =
-          snippet: if completions.length > 1 then word else prefix + word
-          prefix:  if completions.length > 1 then "" else prefix
-          label: "#{completion.qualified_name}"
+          snippet:  if one then prefix + word else word
+          prefix:  if one then prefix else last
+          label: if completions.length > 1 then label else prefix + label
         suggestions.push(suggestion)
       return suggestions
     return []

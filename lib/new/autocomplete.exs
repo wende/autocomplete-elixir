@@ -1,3 +1,6 @@
+getSpec = fn module ->
+  
+end
 require = fn(file) ->
   try do
     Code.require_file(file)

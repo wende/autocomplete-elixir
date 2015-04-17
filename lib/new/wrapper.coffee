@@ -24,7 +24,7 @@ exports.getAutocompletion = (prefix, cb) ->
   inp.write "a #{prefix}\n"
   waitTillEnd (chunk) ->
     [_, one, multi] = chunk.split("|")
-    cb(if one then [one] else multi.split(","))
+    cb({one, multi: multi.split(",")})
 
 exports.loadFile =          (path,   cb = (->)) ->
   unless /.ex$/.test(path)
