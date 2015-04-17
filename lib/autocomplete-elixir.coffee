@@ -1,5 +1,4 @@
 RsenseProvider = require './autocomplete-elixir-provider.coffee'
-require "./server/static"
 
 module.exports =
   config:
