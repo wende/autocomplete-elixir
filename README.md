@@ -16,7 +16,7 @@
 ## Installation
 Installation is done using Atom package manager or command
 
-    apn install autocomplete-elixir
+    apm install autocomplete-elixir
 
 ### Required modules
 - [autocomplete+](https://atom.io/packages/autocomplete-plus)
