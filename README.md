@@ -30,6 +30,7 @@ Installation is done using Atom package manager or command
 - [autocomplete+](https://atom.io/packages/autocomplete-plus)
 - [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)
 - [language-elixir](https://atom.io/packages/language-elixir)
+
 ### Recommended modules
 - [term](https://atom.io/packages/term)
 - [layout-manager](https://atom.io/packages/layout-manager)
