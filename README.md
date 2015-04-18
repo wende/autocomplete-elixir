@@ -7,7 +7,7 @@
 - Type hints for
   - Arguments 
   - Return types
-- Snippets for commond structures
+- Snippets for common structures
 
 ## Incoming features
 - Feel free to suggest additional features at [issues page](https://github.com/iraasta/autocomplete-elixir/issues)
