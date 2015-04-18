@@ -14,11 +14,12 @@ class RsenseClient
         autocomplete.loadFile(e.path)
 
   checkCompletion: (editor, buffer, row, column, prefix, callback) ->
+    console.log "Prefix: #{prefix}"
     autocomplete.getAutocompletion prefix, (result) ->
       console.log result
       result = if result.one
          {result: [result.one], one: true}
         else
           {result: result.multi, one: false}
-      callback(result.result.map (a)-> {continuation: result.one,name: a, qualified_name:a, kind:"elixir"})
+      callback(result.result.map (a)-> {continuation: result.one,name: a, spec:a})
     return []

@@ -15,16 +15,16 @@ exports.init = (projectPaths) ->
   out = ac.stdout
   inp  = ac.stdin
   ac.stderr.on("data", (e) -> console.log("Err: #{e}") )
-  ac.on("close", (e) -> console.log("CLOSED #{e}"); init())
-
+  ac.on("close", (e) -> console.log("CLOSED #{e}"); exports.init(projectPaths))
+  ac.stdout.setMaxListeners(1)
 exports.getAutocompletion = (prefix, cb) ->
   if prefix.trim().length < 1
     cb()
     return
   inp.write "a #{prefix}\n"
   waitTillEnd (chunk) ->
-    [_, one, multi] = chunk.split("|")
-    cb({one, multi: multi.split(",")})
+    [_, one, multi] = chunk.split("<>")
+    cb({one, multi: multi.split(";").filter((a) -> a.trim())})
 
 exports.loadFile =          (path,   cb = (->)) ->
   unless /.ex$/.test(path)
