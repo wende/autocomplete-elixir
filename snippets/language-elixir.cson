@@ -1,0 +1,29 @@
+'.source.elixir':
+  'do':
+    'prefix': 'do'
+    'body': 'do\n\t $1 \nend'
+  'fn':
+    'prefix': 'fn'
+    'body': 'fn ${1:arg} -> \n\t $2 \nend'
+  'try-catch':
+    'prefix' : 'try'
+    'body': 'try\n\t$1\ncatch\n\t${2:_},${3:_} -> $4 \nend'
+  'receive' :
+    'prefix' : 'receive'
+    'body': 'receive do\n\t{:${1:msg},${2:contents}} -> $3\n\end'
+  'quote' :
+    'prefix' : 'quote'
+    'body': 'quote do\n\t$1\n\end'
+  'spawn' :
+    'prefix' : 'spawn'
+    'body': 'spawn(fn ->\n\t$1\nend)'
+  'spawn_link' :
+    'prefix' : 'spawn'
+    'body': 'spawn(fn ->\n\t$1\nend)'
+  'spawn' :
+    'prefix' : 'spawn'
+    'body': 'spawn_link(fn ->\n\t$1\nend)'
+  'Agent start' :
+    'prefix' : 'Agent.start'
+    'body': 'Agent.start_link(fn -> $1 end)'
+  
