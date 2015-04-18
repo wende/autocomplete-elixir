@@ -10,6 +10,14 @@
 - Snippets for common structures
 
 ## Incoming features
+- Local variables autcompletion
+- Variable type inference (by priority)
+  1. Assignment ( T = T )
+  2. Expressions ( T = fn() :: T  , T = T + T) 
+  3. Extraction ( [ T | [T] ] = [T] )
+  4. Matching ( { T1, T2 } = {T1, T2} )
+  5. Remote types
+- Obvious type errors warnings ( Variable doesn't conform to required type / Extraction of non-parametric type)
 - Feel free to suggest additional features at [issues page](https://github.com/iraasta/autocomplete-elixir/issues)
 
 
