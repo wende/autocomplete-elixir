@@ -35,6 +35,7 @@ class RsenseProvider
         [word, spec] = completion.name.trim().split("@")
         argTypes = null
         ret = null;
+        if !word || !word[0] then continue 
         if word[0] == word[0].toUpperCase() then ret = "Module"
         label = completion.spec
         if spec
