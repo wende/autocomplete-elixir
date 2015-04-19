@@ -1,5 +1,21 @@
 spec_to_ast = fn a,b -> Kernel.Typespec.spec_to_ast(a,b) end
 
+y = fn f ->
+  fn x ->
+    f.(fn y -> (x.(x)).(y) end)
+  end.(fn x ->
+    f.(fn y -> (x.(x)).(y) end)
+  end)
+end
+
+
+replaceTypeGen = fn replaceType ->
+  fn
+    [{spec} | specs], types  ->
+    []
+  end
+end
+
 zipFunSpec = fn
   (a, nil) -> a
   (a, []) -> a
@@ -30,7 +46,7 @@ pairWithSpec = fn input, fns ->
   case String.contains?(input, ".") do
     true ->
       mod = Regex.replace ~r/\.\w*$/, input, ""
-      {atom, _} = Code.eval_string("List")
+      {atom, _} = Code.eval_string(mod)
       specMap = getSpec.(atom)
       re = ~r/\/\d+\s*$/
       Enum.map(fns, fn a ->
@@ -69,7 +85,7 @@ execute = fn
   ("a", input) ->
     {exists, one, multi} = IEx.Autocomplete.expand(Enum.reverse(to_char_list(input)))
     {exists, one, pairWithSpec.(input, multi)}
-  ("s", input) -> getSpec.(String.to_atom("Elixir." <> input))
+  ("s", input) -> {"True", "" , Map.to_list getSpec.(String.to_atom("Elixir." <> input))}
 end
 
 loop = fn(y) ->

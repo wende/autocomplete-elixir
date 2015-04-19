@@ -15,7 +15,7 @@ module.exports =
     @rsenseProvider = new RsenseProvider()
 
   provideAutocompletion: ->
-    {providers: [@rsenseProvider]}
+    [@rsenseProvider]
 
   deactivate: ->
     @rsenseProvider?.dispose()

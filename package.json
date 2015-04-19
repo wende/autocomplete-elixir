@@ -35,7 +35,7 @@
     "autocomplete.provider": {
       "description": "Intelligent Elixir code completion",
       "versions": {
-        "1.1.0": "provideAutocompletion"
+        "2.0.0": "provideAutocompletion"
       }
     }
   },

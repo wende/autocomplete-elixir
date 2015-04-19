@@ -10,19 +10,18 @@ class RsenseProvider
     @rsenseClient = new RsenseClient()
 
 
-  requestHandler: (options) ->
+  getSuggestions: (request) ->
     return new Promise (resolve) =>
-      row = options.cursor.getBufferRow()
-      col = options.cursor.getBufferColumn()
+      row = request.bufferPosition.row
+      col = request.bufferPosition.column
 
-      prefix = options.editor.getTextInBufferRange([[row ,0],[row, col]])
+      prefix = request.editor.getTextInBufferRange([[row ,0],[row, col]])
       [... , prefix] = prefix.split(/[ ()]/)
       unless prefix then resolve([])
-      options.prefix = prefix
 
-      completions = @rsenseClient.checkCompletion(options.editor,
-      options.buffer, row, col, options.prefix, (completions) =>
-        suggestions = @findSuggestions(options.prefix, completions)
+      completions = @rsenseClient.checkCompletion(prefix, (completions) =>
+        suggestions = @findSuggestions(prefix, completions)
+        console.log suggestions
         return resolve() unless suggestions?.length
         return resolve(suggestions)
       )
@@ -35,8 +34,8 @@ class RsenseProvider
         [word, spec] = completion.name.trim().split("@")
         argTypes = null
         ret = null;
-        if !word || !word[0] then continue 
-        if word[0] == word[0].toUpperCase() then ret = "Module"
+        if !word || !word[0] then continue
+        if word[0] == word[0].toUpperCase() then [ret,isModule] = ["Module",true]
         label = completion.spec
         if spec
           specs = spec.replace(/^\w+/,"")
@@ -61,6 +60,12 @@ class RsenseProvider
           snippet:  if one then prefix + word else word
           prefix:  if one then prefix else last
           label: if ret then ret else "any"
+          type: if module then "method" else
+                if func then "function" else
+                "variable"
+          description: spec || ret
+          excludeLowerPriority: true
+
         suggestions.push(suggestion)
       return suggestions
     return []

@@ -13,7 +13,7 @@ class RsenseClient
       editor.onDidSave (e) ->
         autocomplete.loadFile(e.path)
 
-  checkCompletion: (editor, buffer, row, column, prefix, callback) ->
+  checkCompletion: (prefix, callback) ->
     #console.log "Prefix: #{prefix}"
     autocomplete.getAutocompletion prefix, (result) ->
       #console.log result
