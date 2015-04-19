@@ -33,7 +33,6 @@ class RsenseProvider
       for completion in completions when completion.name isnt prefix
         one = completion.continuation
         [word, spec] = completion.name.trim().split("@")
-        console.log [word, spec]
         argTypes = null
         ret = null;
         if word[0] == word[0].toUpperCase() then ret = "Module"
@@ -43,7 +42,7 @@ class RsenseProvider
           types = specs.substring(1,specs.length-1).split(",")
           label = specs
           [_, args, ret] = specs.match(/\((.+)\)\s*::\s*(.*)/)
-          console.log [args, ret]
+          #console.log [args, ret]
           argTypes = args.split(",")
         count = parseInt(/\d+$/.exec(word)) || 0;
         func = /\d+$/.test(word)

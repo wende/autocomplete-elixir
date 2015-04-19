@@ -1,5 +1,5 @@
 $ = require('jquery')
-autocomplete = require('./new/wrapper')
+autocomplete = require('./alchemide/wrapper')
 String.prototype.replaceAll = (s,r) -> @split(s).join(r)
 
 module.exports =
