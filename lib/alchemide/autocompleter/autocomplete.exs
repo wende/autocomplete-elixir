@@ -18,19 +18,15 @@ end
 replaceTypes = fn replaceType ->
   fn
     [{type, line, name, args} | types], typesMap ->
-      IO.puts "replacing"
       case typesMap[name] do
           nil   -> [{type, line, name, replaceType.(args,typesMap)} | replaceType.(types,typesMap)]
           type  -> [type | replaceType.(types,typesMap)]
       end
-      #[{type, line, name, replaceType.(args, typesMap)} | replaceType.(types, typesMap)]
     [type | types], typesMap -> [type | replaceType.(types, typesMap)]
     [], _ -> []
   end
 end
 replaceTypes = y2.(replaceTypes)
-
-
 
 zipFunSpec = fn
   (a, nil) -> a
