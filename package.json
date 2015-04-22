@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-elixir",
   "main": "./lib/autocomplete-elixir",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "Krzysztof Wende <iraasta>",
     "email": "iraasta@gmail.com",
