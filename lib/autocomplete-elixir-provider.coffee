@@ -64,7 +64,7 @@ class RsenseProvider
                 if func then "function" else
                 "variable"
           description: spec || ret
-          excludeLowerPriority: true
+          #TODO excludeLowerPriority: true
 
         suggestions.push(suggestion)
       return suggestions

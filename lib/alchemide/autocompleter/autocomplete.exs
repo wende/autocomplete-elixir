@@ -1,20 +1,36 @@
 spec_to_ast = fn a,b -> Kernel.Typespec.spec_to_ast(a,b) end
 
 y = fn f ->
-  fn x ->
+  fun = fn x ->
     f.(fn y -> (x.(x)).(y) end)
-  end.(fn x ->
-    f.(fn y -> (x.(x)).(y) end)
-  end)
+  end
+  fun.(fun)
+end
+
+y2 = fn f ->
+  fun = fn x ->
+    f.(fn y,z -> (x.(x)).(y,z) end)
+  end
+  fun.(fun)
 end
 
 
-replaceTypeGen = fn replaceType ->
+replaceTypes = fn replaceType ->
   fn
-    [{spec} | specs], types  ->
-    []
+    [{type, line, name, args} | types], typesMap ->
+      IO.puts "replacing"
+      case typesMap[name] do
+          nil   -> [{type, line, name, replaceType.(args,typesMap)} | replaceType.(types,typesMap)]
+          type  -> [type | replaceType.(types,typesMap)]
+      end
+      #[{type, line, name, replaceType.(args, typesMap)} | replaceType.(types, typesMap)]
+    [type | types], typesMap -> [type | replaceType.(types, typesMap)]
+    [], _ -> []
   end
 end
+replaceTypes = y2.(replaceTypes)
+
+
 
 zipFunSpec = fn
   (a, nil) -> a
@@ -25,20 +41,26 @@ zipFunSpec = fn
     IO.inspect a
     a <> "@" <> first
 end
+mapper = fn {{name, arity}, types}, typesMap ->
 
+  spec = types
+  |> replaceTypes.(typesMap)
+  |> Enum.map(&spec_to_ast.(name, &1))
+  |> Enum.map(&Macro.to_string/1)
+
+  {Atom.to_string(name), spec}
+end
+reducer = fn {k, v}, acc ->
+  Dict.put(acc,k,v)
+end
 getSpec = fn module ->
-  mapper = fn {{name, arity}, types} ->
-    specs = types
-    |> Enum.map(&(spec_to_ast.(name, &1)))
-    |> Enum.map(&Macro.to_string/1)
-    {Atom.to_string(name), specs}
-  end
-  reducer = fn {k, v}, acc ->
-    Dict.put(acc,k,v)
+  type_aliases = (Kernel.Typespec.beam_types(module) || [])
+  |> Enum.reduce %{}, fn
+    ({:type, {name, type, arg}},b) -> Map.put(b, name, type)
   end
 
-  Kernel.Typespec.beam_specs(module)
-  |> Enum.map(mapper)
+  (Kernel.Typespec.beam_specs(module) || [])
+  |> Enum.map(&mapper.(&1, type_aliases))
   |> Enum.reduce(%{}, reducer)
 end
 
@@ -51,7 +73,7 @@ pairWithSpec = fn input, fns ->
       re = ~r/\/\d+\s*$/
       Enum.map(fns, fn a ->
         b = Dict.get(specMap, Regex.replace(re, List.to_string(a), ""))
-        #IO.inspect specMap
+        IO.inspect specMap
         #IO.inspect b
         zipFunSpec.(List.to_string(a),b)
       end)
