@@ -7,6 +7,7 @@
 - Type hints for
   - Arguments 
   - Return types
+- Type aliases replaced with primitive structures they represent
 - Snippets for common structures
 
 ## Incoming features
