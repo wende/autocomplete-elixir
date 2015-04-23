@@ -35,9 +35,8 @@ class RsenseProvider
   findSuggestions: (prefix, postfix, completions) ->
     if completions?
       suggestions = []
-      for completion in completions when (completion.name isnt prefix) and (completion.name.indexOf(postfix) == 0)
-        console.log "postfix : #{postfix}"
-        console.log "prefix : #{prefix}"
+      for completion in completions when (completion.name isnt prefix+postfix) and (completion.name.indexOf(postfix) == 0)
+
         one = completion.continuation
         [word, spec] = completion.name.trim().split("@")
         argTypes = null
@@ -63,10 +62,9 @@ class RsenseProvider
           word += ")"
           word += "${#{count+1}:\u0020}"
 
-        [..., last] = prefix.split(".")
         suggestion =
-          snippet:  if one then prefix + word else word
-          prefix:  if one then prefix else last
+          snippet:  if one then prefix + postfix + word else word
+          prefix:  if one then prefix + postfix else postfix
           label: if ret then ret else "any"
           type: if module then "method" else
                 if func then "function" else
