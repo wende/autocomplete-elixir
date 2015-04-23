@@ -15,6 +15,7 @@ y2 = fn f ->
 end
 
 
+
 replaceTypes = fn replaceType ->
   fn
     [{type, line, name, args} | types], typesMap ->
@@ -24,6 +25,7 @@ replaceTypes = fn replaceType ->
       end
     [type | types], typesMap -> [type | replaceType.(types, typesMap)]
     [], _ -> []
+    any, _ -> any
   end
 end
 replaceTypes = y2.(replaceTypes)
@@ -69,7 +71,6 @@ pairWithSpec = fn input, fns ->
       re = ~r/\/\d+\s*$/
       Enum.map(fns, fn a ->
         b = Dict.get(specMap, Regex.replace(re, List.to_string(a), ""))
-        IO.inspect specMap
         #IO.inspect b
         zipFunSpec.(List.to_string(a),b)
       end)

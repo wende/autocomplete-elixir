@@ -18,18 +18,26 @@ class RsenseProvider
       prefix = request.editor.getTextInBufferRange([[row ,0],[row, col]])
       [... , prefix] = prefix.split(/[ ()]/)
       unless prefix then resolve([])
+      #TODO check
+      npref = /.*\./.exec prefix
+      postfix = ""
+      if npref
+        postfix = prefix.replace(npref[0], "")
+        prefix = npref[0]
 
       completions = @rsenseClient.checkCompletion(prefix, (completions) =>
-        suggestions = @findSuggestions(prefix, completions)
+        suggestions = @findSuggestions(prefix, postfix , completions)
         console.log suggestions
         return resolve() unless suggestions?.length
         return resolve(suggestions)
       )
 
-  findSuggestions: (prefix, completions) ->
+  findSuggestions: (prefix, postfix, completions) ->
     if completions?
       suggestions = []
-      for completion in completions when completion.name isnt prefix
+      for completion in completions when (completion.name isnt prefix) and (completion.name.indexOf(postfix) == 0)
+        console.log "postfix : #{postfix}"
+        console.log "prefix : #{prefix}"
         one = completion.continuation
         [word, spec] = completion.name.trim().split("@")
         argTypes = null
