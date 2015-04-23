@@ -27,7 +27,6 @@ class RsenseProvider
 
       completions = @rsenseClient.checkCompletion(prefix, (completions) =>
         suggestions = @findSuggestions(prefix, postfix , completions)
-        console.log suggestions
         return resolve() unless suggestions?.length
         return resolve(suggestions)
       )
@@ -45,10 +44,10 @@ class RsenseProvider
         if word[0] == word[0].toUpperCase() then [ret,isModule] = ["Module",true]
         label = completion.spec
         if spec
-          specs = spec.replace(/^\w+/,"")
+          specs = spec.replace(/^[\w!?]+/,"")
           types = specs.substring(1,specs.length-1).split(",")
           label = specs
-          [_, args, ret] = specs.match(/\((.+)\)\s*::\s*(.*)/)
+          [_, args, ret] = specs.match(/\(?(.+)\)\s*::\s*(.*)/)
           #console.log [args, ret]
           argTypes = args.split(",")
         count = parseInt(/\d+$/.exec(word)) || 0;
@@ -61,17 +60,18 @@ class RsenseProvider
         if func
           word += ")"
           word += "${#{count+1}:\u0020}"
+        [..., last] = prefix.split(".")
 
         suggestion =
           snippet:  if one then prefix + postfix + word else word
-          prefix:  if one then prefix + postfix else postfix
+          prefix:  if one then prefix + postfix else last
           label: if ret then ret else "any"
           type: if module then "method" else
                 if func then "function" else
                 "variable"
-          description: spec || ret
+          description: spec || ret || "Desc"
           #TODO excludeLowerPriority: true
-
+        console.log  suggestion
         suggestions.push(suggestion)
       return suggestions
     return []

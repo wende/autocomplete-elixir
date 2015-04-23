@@ -6,7 +6,7 @@ defmodule Scoper do
   def get_variables({name, ctx, [arg|args]}) do
     [get_variables(arg) | get_variables({name, ctx, args})]
     |> List.flatten
-    |> Enum.redreduce(Enumerable.t(), any()) 
+    |> Enum.sca
   end
   def get_variables({name, ctx, other}) do
     {name, ctx, other}

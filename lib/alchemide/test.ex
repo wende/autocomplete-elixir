@@ -1,6 +1,6 @@
 defmodule Test do
   def function() do
 
-    Enum.re
+    Enum.
   end
 end

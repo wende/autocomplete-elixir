@@ -14,8 +14,6 @@ y2 = fn f ->
   fun.(fun)
 end
 
-
-
 replaceTypes = fn replaceType ->
   fn
     [{type, line, name, args} | types], typesMap ->
