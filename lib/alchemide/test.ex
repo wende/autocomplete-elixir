@@ -1,6 +1,10 @@
 defmodule Test do
   def function() do
 
-    Enum.
+    Enum.em
+  end
+
+  def a :: b do
+    IO.
   end
 end

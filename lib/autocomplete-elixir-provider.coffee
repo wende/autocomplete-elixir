@@ -60,7 +60,7 @@ class RsenseProvider
         if func
           word += ")"
           word += "${#{count+1}:\u0020}"
-        [..., last] = prefix.split(".")
+        [..., last] = (prefix + postfix).split(".")
 
         suggestion =
           snippet:  if one then prefix + postfix + word else word
