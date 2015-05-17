@@ -1,10 +1,10 @@
 '.source.elixir':
   'do':
     'prefix': 'do'
-    'body': 'do\n\t $1 \nend'
+    'body': 'do\n\t$1 \nend'
   'fn':
     'prefix': 'fn'
-    'body': 'fn ${1:arg} -> \n\t $2 \nend'
+    'body': 'fn ${1:arg} -> \n\t$2 \nend'
   'try-catch':
     'prefix' : 'try'
     'body': 'try\n\t$1\ncatch\n\t${2:_},${3:_} -> $4 \nend'
@@ -26,4 +26,6 @@
   'Agent start' :
     'prefix' : 'Agent.start'
     'body': 'Agent.start_link(fn -> $1 end)'
-  
+  'Multiline' :
+    'prefix' : 'multi'
+    'body' : '\"\"\"\n\t$1\n\"\"\"'

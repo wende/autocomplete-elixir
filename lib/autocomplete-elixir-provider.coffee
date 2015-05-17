@@ -53,25 +53,30 @@ class RsenseProvider
         count = parseInt(/\d+$/.exec(word)) || 0;
         func = /\d+$/.test(word)
         if func then word = word.split("/")[0] + "("
+        inserted = word;
         i = 0
         while ++i <= count
           if argTypes then word += "${#{i}:#{argTypes[i-1]}}" + (if i != count then "," else "")
           else word +=  "${#{i}:#{i}}" + (if i != count then "," else "")
+          inserted += "${#{i}:#{i}}" + (if i != count then "," else "")
+
+
         if func
-          word += ")"
-          word += "${#{count+1}:\u0020}"
+          word += ")${#{count+1}:\u0020}"
+          inserted += ")${#{count+1}:\u0020}"
         [..., last] = (prefix + postfix).split(".")
 
         suggestion =
           snippet:  if one then prefix + postfix + word else word
+          displayText:  if one then prefix + postfix + word else word
           prefix:  if one then prefix + postfix else last
           label: if ret then ret else "any"
           type: if module then "method" else
                 if func then "function" else
                 "variable"
           description: spec || ret || "Desc"
+          #inclusionPriority: -1
           #TODO excludeLowerPriority: true
-        console.log  suggestion
         suggestions.push(suggestion)
       return suggestions
     return []

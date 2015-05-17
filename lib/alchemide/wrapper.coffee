@@ -1,4 +1,5 @@
 autocomplete = "autocompleter/autocomplete.exs"
+Process = require("atom").BufferedProcess
 
 spawn = require('child_process').spawn
 path = require 'path'
@@ -10,13 +11,20 @@ inp  = null
 exports.init = (projectPaths) ->
   p = path.join(__dirname, autocomplete)
   array = projectPaths
+  stderr = (e) -> console.log("Err: #{e}")
+  exit = (e) -> console.log("CLOSED #{e}"); exports.init(projectPaths)
+
   array.push(p)
-  ac  = spawn("elixir", array.reverse())
-  out = ac.stdout
-  inp  = ac.stdin
-  ac.stderr.on("data", (e) -> console.log("Err: #{e}") )
-  ac.on("close", (e) -> console.log("CLOSED #{e}"); exports.init(projectPaths))
-  ac.stdout.setMaxListeners(1)
+  ac = new Process({command: "elixir", args: array.reverse(), stderr, exit})
+  out = ac.process.stdout
+  inp = ac.process.stdin
+  # ac  = spawn("elixir", array.reverse())
+  # out = ac.stdout
+  # inp  = ac.stdin
+  # ac.stderr.on("data", stderr)
+  # ac.on("close", exit)
+  # ac.stdout.setMaxListeners(2)
+
 exports.getAutocompletion = (prefix, cb) ->
   if prefix.trim().length < 1
     cb()

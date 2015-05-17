@@ -1,10 +1,15 @@
 defmodule Test do
-  def function() do
 
-    Enum.em
+
+  defmacro a :: b do
+    IO.puts("test #{a} #{b}")
+    
   end
 
-  def a :: b do
-    IO.
+
+
+
+  def test(a,b) do
+    a :: b
   end
 end

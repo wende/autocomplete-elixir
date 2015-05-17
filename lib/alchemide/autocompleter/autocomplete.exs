@@ -52,7 +52,7 @@ end
 getSpec = fn module ->
   type_aliases = (Kernel.Typespec.beam_types(module) || [])
   |> Enum.reduce %{}, fn
-    ({:type, {name, type, arg}},b) -> Map.put(b, name, type)
+    ({_, {name, type, arg}},b) -> Map.put(b, name, type)
   end
 
   (Kernel.Typespec.beam_specs(module) || [])
@@ -60,17 +60,18 @@ getSpec = fn module ->
   |> Enum.reduce(%{}, reducer)
 end
 
-pairWithSpec = fn input, fns ->
-  case String.contains?(input, ".") do
+pairWithSpec = fn
+input, fns, regex ->
+  case Regex.match?(~r/\.|:/, input) do
     true ->
-      mod = Regex.replace ~r/\.\w*$/, input, ""
+      mod = Regex.replace regex, input, ""
       {atom, _} = Code.eval_string(mod)
       specMap = getSpec.(atom)
       re = ~r/\/\d+\s*$/
       Enum.map(fns, fn a ->
-        b = Dict.get(specMap, Regex.replace(re, List.to_string(a), ""))
+        b = Dict.get(specMap, Regex.replace(re, to_string(a), ""))
         #IO.inspect b
-        zipFunSpec.(List.to_string(a),b)
+        zipFunSpec.(to_string(a),b)
       end)
     false ->
       fns
@@ -101,8 +102,15 @@ execute = fn
   ("l", input) -> require.(input)
   ("a", input) ->
     {exists, one, multi} = IEx.Autocomplete.expand(Enum.reverse(to_char_list(input)))
-    {exists, one, pairWithSpec.(input, multi)}
+    {exists, one, pairWithSpec.(input, multi, ~r/\.\w*$/)}
   ("s", input) -> {"True", "" , Map.to_list getSpec.(String.to_atom("Elixir." <> input))}
+  ("ea", input) ->
+    ninput = ":"<>String.replace(input, ":", ".")
+    {exists, one, multi} = IEx.Autocomplete.expand(Enum.reverse(to_char_list(ninput)))
+    none = String.replace(List.to_string(one), ".", ":")
+    nmulti = Enum.map multi, &String.replace(to_string(&1), ".", ":")
+    #nmulti = Enum.map(multi, fn a -> String.replace(to_string(a),".",":") end)
+    {exists, none, pairWithSpec.(ninput , nmulti, ~r/\.\w*$/)}
 end
 
 loop = fn(y) ->

@@ -1,16 +1,27 @@
 defmodule TyperTest do
   use ExUnit.Case
 
-  test "the truth" do
-    assert 1 + 1 == 2
-  end
-  test "simple expression value" do
-    assert Typer.get_type(s_to_ast("1")) == :'integer()'
-    assert Typer.get_type(s_to_ast(":atom")) == :'atom()'
+  test "Scoper" do
+    res = Scoper.get_vars(quote do
+      defmodule Specer do
+        def get_spec(module) do
+          mapper = fn {{name, _arity}, types} ->
+            specs = types
+            |> Enum.map(&(Kernel.Typespec.spec_to_ast(name, &1)))
+            |> Enum.map(&Macro.to_string/1)
+            {Atom.to_string(name), specs}
+          end
+          reducer = fn {k, v}, acc ->
+            Dict.put(acc,k,v)
+          end
+
+          Kernel.Typespec.beam_specs(module)
+          |> Enum.map(mapper)
+          |> Enum.reduce(%{}, reducer)
+        end
+      end
+    end)
+    assert res == ["v","module","name","types","k","specs","acc","mapper","reducer"]
   end
 
-  def s_to_ast(string) do
-    {:ok, ast} = Code.string_to_quoted(string)
-    ast
-  end
 end
