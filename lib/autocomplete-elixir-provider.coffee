@@ -8,7 +8,6 @@ class RsenseProvider
   constructor: ->
     @rsenseClient = new RsenseClient()
 
-
   getSuggestions: (request) ->
     return new Promise (resolve) =>
       row = request.bufferPosition.row
