@@ -2,7 +2,6 @@ RsenseClient = require './autocomplete-elixir-client.coffee'
 
 module.exports =
 class RsenseProvider
-  id: 'autocomplete-elixir-elixirprovider'
   selector: '.source.elixir'
   rsenseClient: null
 
