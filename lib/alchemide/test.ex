@@ -9,6 +9,7 @@ defmodule Test do
 
 
   def test(a,b) do
+    
     a :: b
   end
 end

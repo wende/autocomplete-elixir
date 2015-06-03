@@ -40,6 +40,9 @@ class RsenseProvider
         ret = null;
         if !word || !word[0] then continue
         if word[0] == word[0].toUpperCase() then [ret,isModule] = ["Module",true]
+        console.log(word)
+        console.log(word[0])
+        console.log("is mod #{isModule}")
         label = completion.spec
         if spec
           specs = spec.replace(/^[\w!?]+/,"")
@@ -50,6 +53,7 @@ class RsenseProvider
           argTypes = args.split(",")
         count = parseInt(/\d+$/.exec(word)) || 0;
         func = /\d+$/.test(word)
+        console.log("is function #{func}")
         if func then word = word.split("/")[0] + "("
         inserted = word;
         i = 0
@@ -64,14 +68,16 @@ class RsenseProvider
           inserted += ")${#{count+1}:\u0020}"
         [..., last] = (prefix + postfix).split(".")
 
+        type = "variable"
+        if isModule then type = "method"
+        if func     then type = "function"
+
         suggestion =
           snippet:  if one then prefix + postfix + word else word
           displayText:  if one then prefix + postfix + word else word
           prefix:  if one then prefix + postfix else last
           label: if ret then ret else "any"
-          type: if module then "method" else
-                if func then "function" else
-                "variable"
+          type: type
           description: spec || ret || "Desc"
           #inclusionPriority: -1
           #TODO excludeLowerPriority: true
