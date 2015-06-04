@@ -27,6 +27,7 @@ Installation is done using Atom package manager or command
 
     apm install autocomplete-elixir
 
+CAUTION: MAKE SURE TO HAVE `autocomplete-plus` PACKAGE INSTALLED
 
 ### Common Errors
 - 'Failed to spawn command elixir. Make sure elixir is installed and in your PATH'
