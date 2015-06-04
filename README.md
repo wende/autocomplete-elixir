@@ -10,6 +10,14 @@
 - Type aliases replaced with primitive structures they represent
 - Snippets for common structures
 
+## Installation
+Installation is done using Atom package manager or command
+
+    apm install autocomplete-elixir
+
+CAUTION: MAKE SURE TO HAVE `autocomplete-plus` PACKAGE INSTALLED
+
+
 ## Incoming features
 - Local variables autocompletion
 - Variable type inference (by priority)
@@ -22,15 +30,8 @@
 - Feel free to suggest additional features at [issues page](https://github.com/iraasta/autocomplete-elixir/issues)
 
 
-## Installation
-Installation is done using Atom package manager or command
-
-    apm install autocomplete-elixir
-
-CAUTION: MAKE SURE TO HAVE `autocomplete-plus` PACKAGE INSTALLED
-
 ### Common Errors
-- 'Failed to spawn command elixir. Make sure elixir is installed and in your PATH'
+- `Failed to spawn command elixir. Make sure elixir is installed and in your PATH`  
   Let me guess. You're using MacOS. This happens when starting atom from Finder.
   Finder-started applications have no access to PATH variable. To go around that make
   sure to set "Elixir Path" in package configuration to Your absolute elixir executable
