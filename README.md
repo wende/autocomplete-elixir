@@ -5,16 +5,16 @@
   - Global modules and functions
   - Local project modules and functions (those which compile successfully)
 - Type hints for
-  - Arguments 
+  - Arguments
   - Return types
 - Type aliases replaced with primitive structures they represent
 - Snippets for common structures
 
 ## Incoming features
-- Local variables autcompletion
+- Local variables autocompletion
 - Variable type inference (by priority)
   1. Assignment ( T = T )
-  2. Expressions ( T = fn() :: T  , T = T + T) 
+  2. Expressions ( T = fn() :: T  , T = T + T)
   3. Extraction ( [ T | [T] ] = [T] )
   4. Matching ( { T1, T2 } = {T1, T2} )
   5. Remote types
@@ -26,6 +26,15 @@
 Installation is done using Atom package manager or command
 
     apm install autocomplete-elixir
+
+
+### Common Errors
+- 'Failed to spawn command elixir. Make sure elixir is installed and in your PATH'
+  Let me guess. You're using MacOS. This happens when starting atom from Finder.
+  Finder-started applications have no access to PATH variable. To go around that make
+  sure to set "Elixir Path" in package configuration to Your absolute elixir executable
+  path
+
 
 ### Required modules
 - [autocomplete+](https://atom.io/packages/autocomplete-plus)

@@ -2,12 +2,10 @@ RsenseProvider = require './autocomplete-elixir-provider.coffee'
 
 module.exports =
   config:
-    port:
-      description: 'The port the rsense server is running on'
-      type: 'integer'
-      default: 47367
-      minimum: 1024
-      maximum: 65535
+    elixrPath:
+      type: 'string'
+      default: "elixir"
+      description: "Absolute path to elixir executable (essential for MacOS)"
 
   rsenseProvider: null
 

@@ -15,7 +15,9 @@ exports.init = (projectPaths) ->
   exit = (e) -> console.log("CLOSED #{e}"); exports.init(projectPaths)
 
   array.push(p)
-  ac = new Process({command: "elixir", args: array.reverse(), stderr, exit})
+  command = atom.config.get('my-package.thingVolume') || "elixir"
+
+  ac = new Process({command: command, args: array.reverse(), stderr, exit})
   out = ac.process.stdout
   inp = ac.process.stdin
   # ac  = spawn("elixir", array.reverse())
