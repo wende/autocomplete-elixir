@@ -35,7 +35,7 @@ CAUTION: MAKE SURE TO HAVE `autocomplete-plus` PACKAGE INSTALLED
   Let me guess. You're using MacOS. This happens when starting atom from Finder.
   Finder-started applications have no access to PATH variable. To go around that make
   sure to set "Elixir Path" in package configuration to Your absolute elixir executable
-  path
+  path or start atom from command line instead.
 
 
 ### Required modules
