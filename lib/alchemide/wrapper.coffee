@@ -7,8 +7,10 @@ fs = require 'fs'
 
 out = null
 inp  = null
+projectPaths = null;
 
-exports.init = (projectPaths) ->
+exports.init = (pP) ->
+  projectPaths = pP;
   p = path.join(__dirname, autocomplete)
   array = projectPaths
   stderr = (e) -> console.log("Err: #{e}")
@@ -28,6 +30,7 @@ exports.init = (projectPaths) ->
   # ac.stdout.setMaxListeners(2)
 
 exports.getAutocompletion = (prefix, cb) ->
+  unless inp then exports.init(projectPaths)
   if prefix.trim().length < 1
     cb()
     return
@@ -37,6 +40,7 @@ exports.getAutocompletion = (prefix, cb) ->
     cb({one, multi: multi.split(";").filter((a) -> a.trim())})
 
 exports.loadFile =          (path,   cb = (->)) ->
+  unless inp then exports.init(projectPaths)
   unless /.ex$/.test(path)
     cb()
     return
