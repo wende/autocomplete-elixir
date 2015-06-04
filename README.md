@@ -33,8 +33,8 @@ CAUTION: MAKE SURE TO HAVE `autocomplete-plus` PACKAGE INSTALLED
 ### Common Errors
 
 #### Package spits out a lot of errors on my MacOS
-  It seems that MacOS has a lot of different safe measures which don't cooperate with atom nicely.  
-  For optimal behaviour always start atom from command line instead of from Finder.
+  It seems that MacOS has a lot of different safe measures which don't cooperate nicely with atom environment.  
+  For optimal behaviour always start atom from command line instead of Finder.
   
 #### `Failed to spawn command elixir. Make sure elixir is installed and in your PATH`  
   Let me guess. You're using MacOS. This happens when starting atom from Finder.
