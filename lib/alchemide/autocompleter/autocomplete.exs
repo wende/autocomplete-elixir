@@ -119,6 +119,19 @@ loop = fn(y) ->
   y.(y)
 end
 
+startLoop = fn() ->
+  loop.(loop)
+end
+
+set = fn(reset) ->
+  {proc, mRef} = spawn_monitor(startLoop)
+  receive do
+    {:DOWN, ^mRef, :process, ^proc, info} ->
+      :io.format(:standard_error, "Down Alarm> ~p~n", [info])
+      reset.(reset)
+  end
+end
+
 System.argv
 |> Enum.map(loadAll)
-loop.(loop)
+set.(set)
