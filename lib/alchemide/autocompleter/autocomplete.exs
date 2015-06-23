@@ -127,7 +127,7 @@ set = fn(reset) ->
   {proc, mRef} = spawn_monitor(startLoop)
   receive do
     {:DOWN, ^mRef, :process, ^proc, info} ->
-      :io.format(:standard_error, "Down Alarm> ~p~n", [info])
+      IO.puts(:stderr, "Down> #{inspect(info)}")
       reset.(reset)
   end
 end
