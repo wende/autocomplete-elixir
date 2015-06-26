@@ -13,21 +13,17 @@ exports.init = (pP) ->
   projectPaths = pP;
   p = path.join(__dirname, autocomplete)
   array = projectPaths
-  stderr = (e) -> console.log("Err: #{e}")
+  stderr = (e) -> #console.log("Err: #{e}")
   exit = (e) -> console.log("CLOSED #{e}"); exports.init(projectPaths)
 
   array.push(p)
-  command = atom.config.get('my-package.thingVolume') || "elixir"
+  setting = atom.config.get('autocomplete-elixir.elixirPath')
+  command = path.join ( setting || "") , "elixir"
+  console.log(setting)
 
   ac = new Process({command: command, args: array.reverse(), stderr, exit})
   out = ac.process.stdout
   inp = ac.process.stdin
-  # ac  = spawn("elixir", array.reverse())
-  # out = ac.stdout
-  # inp  = ac.stdin
-  # ac.stderr.on("data", stderr)
-  # ac.on("close", exit)
-  # ac.stdout.setMaxListeners(2)
 
 exports.getAutocompletion = (prefix, cb) ->
   unless inp then exports.init(projectPaths)
