@@ -2,7 +2,7 @@ RsenseProvider = require './autocomplete-elixir-provider.coffee'
 
 module.exports =
   config:
-    elixrPath:
+    elixirPath:
       type: 'string'
       default: "elixir"
       description: "Absolute path to elixir executable (essential for MacOS)"
