@@ -91,7 +91,15 @@ loadAll = fn(dir) ->
   dir
   |> Path.join("**/*.ex")
   |> Path.wildcard()
-  |> Enum.map(require)
+  |> Enum.map(fn(file) ->
+    {require.(file), file}
+  end)
+  |> Enum.map(fn
+    ({{"Ok", _, _} = ok, _}) ->
+      ok
+    ({_err, file}) ->
+      require.(file) ## 2nd chance for modules that state in internal dependency failure.
+  end)
 end
 
 formatResult = fn({exists, one, multi}) ->
