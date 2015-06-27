@@ -13,13 +13,18 @@ exports.init = (pP) ->
   projectPaths = pP;
   p = path.join(__dirname, autocomplete)
   array = projectPaths
-  stderr = (e) -> #console.log("Err: #{e}")
+
+  reDown = /^Down>/
+  stderr = (e) ->
+    if reDown.test(e)
+      return console.error(e)
+    console.info (e)
+
   exit = (e) -> console.log("CLOSED #{e}"); exports.init(projectPaths)
 
   array.push(p)
   setting = atom.config.get('autocomplete-elixir.elixirPath')
-  command = path.join ( setting || "") , "elixir"
-  console.log(setting)
+  command = setting || "elixir"
 
   ac = new Process({command: command, args: array.reverse(), stderr, exit})
   out = ac.process.stdout
