@@ -32,12 +32,12 @@ CAUTION: MAKE SURE TO HAVE `autocomplete-plus` PACKAGE INSTALLED
 
 ### Common Errors
 
-#### Package spits out a lot of errors on my MacOS
-  It seems that MacOS has a lot of different safe measures which don't cooperate nicely with atom environment.  
+#### Package spits out a lot of errors on my OSX
+  It seems that OSX has a lot of different safe measures which don't cooperate nicely with atom environment.  
   For optimal behaviour always start atom from command line instead of Finder.
   
 #### `Failed to spawn command elixir. Make sure elixir is installed and in your PATH`  
-  Let me guess. You're using MacOS. This happens when starting atom from Finder.
+  Let me guess. You're using OSX. This happens when starting atom from Finder.
   Finder-started applications have no access to PATH variable. To go around that make
   sure to set "Elixir Path" in package configuration to Your absolute elixir executable
   path or start atom from command line instead.
@@ -48,6 +48,3 @@ CAUTION: MAKE SURE TO HAVE `autocomplete-plus` PACKAGE INSTALLED
 - [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)
 - [language-elixir](https://atom.io/packages/language-elixir)
 
-### Recommended modules
-- [term](https://atom.io/packages/term)
-- [layout-manager](https://atom.io/packages/layout-manager)
