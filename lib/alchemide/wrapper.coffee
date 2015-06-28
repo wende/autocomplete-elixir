@@ -7,6 +7,7 @@ spawn = require('child_process').spawn
 path = require 'path'
 fs = require 'fs'
 
+
 out = null
 inp  = null
 projectPaths = null;
@@ -29,6 +30,7 @@ exports.init = (pP) ->
   ac = new Process({command: command, args: array.reverse(), stderr, exit, stdout: ->})
   unless ac.process then exports.init(pP)
 
+  ac = new Process({command: command, args: array.reverse(), stderr, exit})
   out = ac.process.stdout
   inp = ac.process.stdin
 

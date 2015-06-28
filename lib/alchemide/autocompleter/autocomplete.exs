@@ -91,7 +91,15 @@ loadAll = fn(dir) ->
   dir
   |> Path.join("**/*.ex")
   |> Path.wildcard()
-  |> Enum.map(require)
+  |> Enum.map(fn(file) ->
+    {require.(file), file}
+  end)
+  |> Enum.map(fn
+    ({{"Ok", _, _} = ok, _}) ->
+      ok
+    ({_err, file}) ->
+      require.(file) ## 2nd chance for modules that state in internal dependency failure.
+  end)
 end
 
 formatResult = fn({exists, one, multi}) ->
@@ -119,6 +127,19 @@ loop = fn(y) ->
   y.(y)
 end
 
+startLoop = fn() ->
+  loop.(loop)
+end
+
+set = fn(reset) ->
+  {proc, mRef} = spawn_monitor(startLoop)
+  receive do
+    {:DOWN, ^mRef, :process, ^proc, info} ->
+      IO.puts(:stderr, "Down> #{inspect(info)}")
+      reset.(reset)
+  end
+end
+
 System.argv
 |> Enum.map(loadAll)
-loop.(loop)
+set.(set)
