@@ -9,6 +9,8 @@ out = null
 inp  = null
 projectPaths = null;
 
+error = (e) -> atom.notifications.addError("Woops. Something went bananas \n Error: #{e}") #console.log("Err: #{e}")
+
 exports.init = (pP) ->
   projectPaths = pP;
   p = path.join(__dirname, autocomplete)
@@ -17,11 +19,15 @@ exports.init = (pP) ->
   exit = (e) -> console.log("CLOSED #{e}"); exports.init(projectPaths)
 
   array.push(p)
-  setting = atom.config.get('autocomplete-elixir.elixirPath')
+  setting = atom.config.get('autocomplete-elixir.elixirPath').replace(/elixir$/,"")
   command = path.join ( setting || "") , "elixir"
   console.log(setting)
+  try
+    ac = new Process({command: command, args: array.reverse(), stderr, exit})
+  catch e
+    error e
 
-  ac = new Process({command: command, args: array.reverse(), stderr, exit})
+
   out = ac.process.stdout
   inp = ac.process.stdin
 

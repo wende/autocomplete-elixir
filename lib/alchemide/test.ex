@@ -6,11 +6,8 @@ defmodule Test do
   end
 
 
-
-
   def test(a,b) do
     Some
     a :: b
-    
   end
 end
