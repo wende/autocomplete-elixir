@@ -25,14 +25,12 @@ exports.init = (pP) ->
   setting = atom.config.get("#{name}.elixirPath").replace(/elixir$/,"")
   command = path.join ( setting || "") , "elixir"
   console.log(setting)
-  try
-    ac = new Process({command: command, args: array.reverse(), stderr, exit})
-  catch e
-    error e
-
+  ac = new Process({command: command, args: array.reverse(), stderr, exit, stdout: ->})
+  unless ac.process then exports.init(pP)
 
   out = ac.process.stdout
   inp = ac.process.stdin
+
 
 exports.getAutocompletion = (prefix, cb) ->
   unless inp then exports.init(projectPaths)
