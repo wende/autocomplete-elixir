@@ -29,6 +29,7 @@ exports.init = (pP) ->
   ac = new Process({command: command, args: array.reverse(), stderr, exit, stdout: ->})
   unless ac.process then exports.init(pP)
 
+  ac = new Process({command: command, args: array.reverse(), stderr, exit})
   out = ac.process.stdout
   inp = ac.process.stdin
 
