@@ -4,7 +4,7 @@ module.exports =
   config:
     elixirPath:
       type: 'string'
-      default: "elixir"
+      default: ""
       description: "Absolute path to elixir executable (essential for MacOS)"
 
   rsenseProvider: null

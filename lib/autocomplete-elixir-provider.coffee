@@ -1,8 +1,13 @@
-RsenseClient = require './autocomplete-elixir-client.coffee'
+IS_ELIXIR = true
+
+lang = if IS_ELIXIR then "elixir" else "erlang"
+
+RsenseClient = require "./autocomplete-#{lang}-client.coffee"
+
 
 module.exports =
 class RsenseProvider
-  selector: '.source.elixir'
+  selector: ".source.#{lang}"
   rsenseClient: null
 
   constructor: ->
@@ -66,7 +71,7 @@ class RsenseProvider
         if func
           word += ")${#{count+1}:\u0020}"
           inserted += ")${#{count+1}:\u0020}"
-        [..., last] = (prefix + postfix).split(".")
+        [..., last] = (prefix + postfix).split(if IS_ELIXIR then "." else ":")
 
         type = "variable"
         if isModule then type = "method"
