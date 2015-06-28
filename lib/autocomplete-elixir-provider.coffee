@@ -45,9 +45,6 @@
           ret = null;
           if !word || !word[0] then continue
           if word[0] == word[0].toUpperCase() then [ret,isModule] = ["Module",true]
-          console.log(word)
-          console.log(word[0])
-          console.log("is mod #{isModule}")
           label = completion.spec
           if spec
             specs = spec.replace(/^[\w!?]+/,"")
@@ -58,7 +55,6 @@
             argTypes = args.split(",")
           count = parseInt(/\d+$/.exec(word)) || 0;
           func = /\d+$/.test(word)
-          console.log("is function #{func}")
           if func then word = word.split("/")[0] + "("
           inserted = word;
           i = 0

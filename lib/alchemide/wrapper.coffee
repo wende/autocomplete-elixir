@@ -10,6 +10,7 @@ fs = require 'fs'
 out = null
 inp  = null
 projectPaths = null;
+lastError = null;
 
 error = (e) -> atom.notifications.addError("Woops. Something went bananas \n Error: #{e}") #console.log("Err: #{e}")
 
@@ -17,8 +18,8 @@ exports.init = (pP) ->
   projectPaths = pP;
   p = path.join(__dirname, autocomplete)
   array = projectPaths
-  stderr = (e) -> #console.log("Err: #{e}")
-  exit = (e) -> console.log("CLOSED #{e}"); exports.init(projectPaths)
+  stderr = (e) -> lastError = e #console.log("Err: #{e}")
+  exit = (e) -> console.error("CLOSED #{e}, Last Error: #{lastError}"); exports.init(projectPaths)
 
   array.push(p)
   name = if IS_ELIXIR then 'autocomplete-elixir' else 'autocomplete-erlang'
