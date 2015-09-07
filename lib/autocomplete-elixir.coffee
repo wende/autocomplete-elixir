@@ -6,6 +6,10 @@ module.exports =
       type: 'string'
       default: ""
       description: "Absolute path to elixir executable (essential for MacOS)"
+    erlangHome:
+      type: 'string'
+      default: ""
+      description: "Absolute path to erlang bin directory (essential for MacOS)"
 
   rsenseProvider: null
 
