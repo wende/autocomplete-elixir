@@ -1,3 +1,5 @@
+[env: [autocomplete_server: IEx.Server]]
+
 spec_to_ast = fn a,b -> Kernel.Typespec.spec_to_ast(a,b) end
 
 y = fn f ->
