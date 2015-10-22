@@ -1,4 +1,4 @@
-[env: [autocomplete_server: IEx.Server]]
+Application.put_env(:iex, :autocomplete_server, IEx.Server)
 
 spec_to_ast = fn a,b -> Kernel.Typespec.spec_to_ast(a,b) end
 
