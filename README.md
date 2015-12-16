@@ -1,5 +1,7 @@
 # Atom intelligent Elixir Autocompletion for Autocomplete+
 
+![Image of autocomplete-elixir](https://raw.githubusercontent.com/wende/autocomplete-elixir/master/pics/presentation.png)
+
 ## Features
 - Intelligent autocompletion of
   - Global modules and functions
