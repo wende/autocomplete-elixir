@@ -1,6 +1,6 @@
 IS_ELIXIR = true
 
-extend = require "extend"
+extend = require "./extend"
 autocomplete = "autocompleter/autocomplete.exs"
 Process = require("atom").BufferedProcess
 

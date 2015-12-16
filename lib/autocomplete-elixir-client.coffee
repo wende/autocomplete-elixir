@@ -1,7 +1,5 @@
-$ = require('jquery')
 autocomplete = require('./alchemide/wrapper')
 doendmather = require './alchemide/doendmatcher'
-String.prototype.replaceAll = (s,r) -> @split(s).join(r)
 
 module.exports =
 class RsenseClient
