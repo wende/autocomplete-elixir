@@ -30,8 +30,7 @@ exports.init = (pP) ->
 
   erlPath = atom.config.get("#{name}.erlangHome")
   if !erlPath
-    atom.notifications.addError('Erlang home configuration setting missing. Enter absolute path to erlang bin directory in package setting page.')
-    return false
+    atom.notifications.addError('Erlang home configuration setting missing')
   options = {
     env: extend({
       ERL_HOME: erlPath,
