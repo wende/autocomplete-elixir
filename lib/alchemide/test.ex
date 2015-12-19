@@ -3,11 +3,10 @@ defmodule Test do
 
   defmacro a :: b do
     IO.puts("test #{a} #{b}")
-    IO.
   end
 
 
   def test(a,b) do
-    a :: b
+    Test.test()
   end
 end

@@ -1,11 +1,15 @@
 autocomplete = require('./alchemide/wrapper')
 doendmather = require './alchemide/doendmatcher'
+jumptodef = require './alchemide/jumptodef'
+
+atom.commands.add 'atom-text-editor',
+  'autocomplete-elixir:jump-to-definition': (event) ->
+    editor = @getModel()
+    if(/.exs?$/.test(editor.getTitle()))
+      jumptodef.jump(editor)
 
 module.exports =
 class RsenseClient
-  projectPath: null
-  serverUrl: null
-
   constructor: ->
     autocomplete.init(atom.project.getPaths())
     atom.workspace.observeTextEditors (editor) ->

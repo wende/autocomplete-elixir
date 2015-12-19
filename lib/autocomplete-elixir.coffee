@@ -1,7 +1,12 @@
 RsenseProvider = require './autocomplete-elixir-provider.coffee'
+delorean = require "./delorean/delorean.coffee"
 
 module.exports =
   config:
+    matchDoEnd:
+      type: 'boolean'
+      default: true
+      description: "Highlight matching [do|fn]/[end] constructs"
     elixirPath:
       type: 'string'
       default: ""
@@ -15,6 +20,7 @@ module.exports =
 
   activate: (state) ->
     @rsenseProvider = new RsenseProvider()
+    delorean.activate(state);
 
   provideAutocompletion: ->
     [@rsenseProvider]
