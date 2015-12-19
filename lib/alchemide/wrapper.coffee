@@ -51,7 +51,9 @@ exports.init = (pP) ->
 
 
 exports.getAutocompletion = (prefix, cb) ->
-  unless inp then exports.init(projectPaths)
+  unless inp
+    exports.init(projectPaths)
+    return
   if prefix.trim().length < 1
     cb()
     return
@@ -62,7 +64,9 @@ exports.getAutocompletion = (prefix, cb) ->
     cb({one, multi: multi.split(";").filter((a) -> a.trim())})
 
 exports.loadFile =          (path,   cb = (->)) ->
-  unless inp then exports.init(projectPaths)
+  unless inp
+    exports.init(projectPaths)
+    return
   unless /.ex$/.test(path)
     cb()
     return
