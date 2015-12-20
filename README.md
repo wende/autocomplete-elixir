@@ -12,6 +12,7 @@
 - Type aliases replaced with primitive structures they represent
 - Snippets for common structures
 - `do`/`fn` -> `end` highlighting
+- Jump to local function/macro defintion with `alt+.` and back with `alt+,`
 
 ## Installation
 Installation is done using Atom package manager or command
@@ -22,16 +23,10 @@ CAUTION: MAKE SURE TO HAVE `autocomplete-plus` PACKAGE INSTALLED
 
 
 ## Incoming features
-- Local variables autocompletion
-- Variable type inference (by priority)
-  1. Assignment ( T = T )
-  2. Expressions ( T = fn() :: T  , T = T + T)
-  3. Extraction ( [ T | [T] ] = [T] )
-  4. Matching ( { T1, T2 } = {T1, T2} )
-  5. Remote types
-- Obvious type errors warnings ( Variable doesn't conform to required type / Extraction of non-parametric type)
-- Feel free to suggest additional features at [issues page](https://github.com/iraasta/autocomplete-elixir/issues)
+### 1.6
+- Jump to definition out of local module
 
+Feel free to suggest additional features at [issues page](https://github.com/iraasta/autocomplete-elixir/issues)
 
 ### Common Errors
 
