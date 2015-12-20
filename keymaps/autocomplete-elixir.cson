@@ -1,0 +1,3 @@
+'atom-text-editor':
+  "alt-,": 'autocomplete-elixir:backward'
+  "alt-.": 'autocomplete-elixir:jump-to-definition'
