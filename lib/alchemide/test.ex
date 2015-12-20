@@ -8,7 +8,7 @@ defmodule Test do
   end
 
 
-  def test(a,b) do
-    Test.test()
-  end
+    def test(a,b) do
+      Test.test()
+    end
 end

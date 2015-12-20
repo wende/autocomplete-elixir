@@ -28,6 +28,8 @@ exports.init = (pP) ->
   setting = atom.config.get("#{name}.elixirPath").replace(/elixir$/,"")
   command = path.join ( setting || "") , "elixir"
 
+  #line 1  #line 2
+
   erlPath = atom.config.get("#{name}.erlangHome").trim()
   if !erlPath
     atom.notifications.addError('Erlang home configuration setting missing')
