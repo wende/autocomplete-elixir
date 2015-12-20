@@ -12,7 +12,7 @@
 - Type aliases replaced with primitive structures they represent
 - Snippets for common structures
 - `do`/`fn` -> `end` highlighting
-- Jump to local function/macro defintion with `alt+.` and back with `alt+,`
+- Jump to local function/macro defintion with `alt-.` and back with `alt-,`
 
 ## Installation
 Installation is done using Atom package manager or command
