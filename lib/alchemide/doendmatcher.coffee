@@ -1,7 +1,7 @@
 DO = "do"
 END = "end"
 FN = "fn"
-DOEND = /(do|end|fn)/g
+DOEND = /(\Wdo\W|\Wend\W|\Wfn\W)/g
 {Range, Point} = require("atom")
 decorations = []
 
