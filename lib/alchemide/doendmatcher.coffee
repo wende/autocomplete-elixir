@@ -1,7 +1,7 @@
-DO = "do"
-END = "end"
-FN = "fn"
-DOEND = /(\Wdo\W|\Wend\W|\Wfn\W)/g
+DO = /\bdo\b/
+END = /\bend\b/
+FN = /\bfn\b/
+DOEND = /(\bdo\b|\bend\b|\bfn\b)/g
 {Range, Point} = require("atom")
 decorations = []
 
@@ -21,19 +21,19 @@ module.exports.handleMatch = (editor, e) ->
 
   word = editor.getWordUnderCursor()
   counter = 0;
-  if word == DO
+  if DO.test(word)
     highlightRange(editor, e.cursor.getCurrentWordBufferRange())
     editor.scanInBufferRange DOEND, toEnd, ({range: r, matchText: m, stop }) ->
-      if m == DO or m == FN then counter++
-      if m == END and counter then counter--
+      if DO.test(m) or FN.test(m) then counter++
+      if END.test(m) and counter then counter--
       else if !counter
         highlightRange(editor, r)
         stop()
-  if word == END
+  if END.test(word)
     highlightRange(editor, e.cursor.getCurrentWordBufferRange())
     editor.backwardsScanInBufferRange DOEND, fromBeginning, ({range: r, matchText: m, stop }) ->
-      if m == END then counter++
-      if (m == DO || m == FN) && counter then counter--
+      if END.test(m) then counter++
+      if (DO.test(m) || FN.test(m)) && counter then counter--
       else if !counter
         highlightRange(editor, r)
         stop()
