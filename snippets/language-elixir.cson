@@ -1,10 +1,28 @@
 '.source.elixir':
+  'behaviour':
+    'prefix': '@behaviour'
+    'body': '@behaviour ${1:Behaviour}'
+  'spec':
+    'prefix': 'spec'
+    'body': '@spec ${1:name}(${2:args}) :: ${3:return_type}'
+  'doctest':
+    'prefix': 'doctest'
+    'body': '@doc ~S"""\n ${1:Description}\n\n## Examples\n\n\tiex> ${2:usage}\n\t${3:result}\n\n"""'
+  'puts':
+    'prefix': 'puts'
+    'body': 'IO.puts $1'
+  'inspect':
+    'prefix': 'inspect'
+    'body': 'IO.inspect $1'
   'do':
     'prefix': 'do'
     'body': 'do\n\t$1 \nend'
   'fn':
     'prefix': 'fn'
-    'body': 'fn ${1:arg} -> \n\t$2 \nend'
+    'body': 'fn ${1:arg} -> $2 end'
+  'for':
+    'prefix': 'for'
+    'body': 'for ${1:x} <- ${2:xs}, do: ${3:x}'
   'try-catch':
     'prefix' : 'try'
     'body': 'try\n\t$1\ncatch\n\t${2:_},${3:_} -> $4 \nend'

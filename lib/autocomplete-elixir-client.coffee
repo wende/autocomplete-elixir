@@ -1,6 +1,6 @@
 autocomplete = require('./alchemide/wrapper')
 doendmather = require './alchemide/doendmatcher'
-jumptodef = require './alchemide/jumptodef'
+jumptodef = require './alchemide/jumptodef/jumptodef.coffee'
 
 atom.commands.add 'atom-text-editor',
   'autocomplete-elixir:jump-to-definition': (event) ->
