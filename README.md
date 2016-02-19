@@ -32,6 +32,10 @@ Feel free to suggest additional features at [issues page](https://github.com/ira
 
 #### Package spits out a lot of errors on my OSX
   It seems that OSX has a lot of different safe measures which don't cooperate nicely with atom environment.  
+  Make sure you've got both erlang and elixir installed and paths set up in package settings:
+  ![Image of autocomplete-elixir](https://raw.githubusercontent.com/wende/autocomplete-elixir/master/pics/settings.png)
+
+  
   For optimal behaviour always start atom from command line instead of Finder.
   
 #### `Failed to spawn command elixir. Make sure elixir is installed and in your PATH`  
