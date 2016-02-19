@@ -50,3 +50,14 @@ Feel free to suggest additional features at [issues page](https://github.com/ira
 - [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)
 - [language-elixir](https://atom.io/packages/language-elixir)
 
+### Troubleshooting
+1. Make sure you've got both Elixir and Erlang installed
+2. Make sure you've got both paths set up in settings
+You can check both things by running:
+`which elixir` -> /usr/local/bin/elixir
+`which erl` -> /usr/local/bin/erl
+And insert the whole path of elixir but only folder path of erl
+![Image of autocomplete-elixir](https://raw.githubusercontent.com/wende/autocomplete-elixir/master/pics/Screen.Shot.2016-02-19.at.17.12.58.png)
+3. Make sure You've got Elixir-language package installed
+4. Try running atom from the CLI
+5. Read existing issues ;)
