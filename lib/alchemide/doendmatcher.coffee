@@ -1,7 +1,7 @@
-DO = /\bdo\b/
+DO = /(?!do:)\bdo\b/
 END = /\bend\b/
 FN = /\bfn\b/
-DOEND = /(\bdo\b|\bend\b|\bfn\b)/g
+DOEND = /(?!do:)(\bdo\b|\bend\b|\bfn\b)/g
 {Range, Point} = require("atom")
 decorations = []
 
