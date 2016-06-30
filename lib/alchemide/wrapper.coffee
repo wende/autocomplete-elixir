@@ -31,13 +31,15 @@ exports.init = (pP) ->
   #line 1  #line 2
 
   erlPath = atom.config.get("#{name}.erlangHome").trim()
-  if !erlPath
-    atom.notifications.addError('Erlang home configuration setting missing')
+  env = if erlPath
+      extend({
+        ERL_HOME: erlPath,
+        ERL_PATH: path.join(erlPath, 'erl')
+      }, process.env)
+  else
+      process.env
   options = {
-    env: extend({
-      ERL_HOME: erlPath,
-      ERL_PATH: path.join(erlPath, 'erl')
-    }, process.env)
+    env: env
   }
 
   console.log(setting)
