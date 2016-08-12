@@ -60,4 +60,5 @@ And insert the whole path of elixir but only folder path of erl
 ![Image of autocomplete-elixir](https://raw.githubusercontent.com/wende/autocomplete-elixir/master/pics/Screen.Shot.2016-02-19.at.17.12.58.png)
 3. Make sure You've got Elixir-language package installed
 4. Try running atom from the CLI
-5. Read existing issues ;)
+5. If functions are not showing up in the auto-complete list, be sure that atom's root directory has your `mix.exs` file. This can be either your individual application or an umbrella app.
+6. Read existing issues ;)
