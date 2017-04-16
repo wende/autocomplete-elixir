@@ -1,3 +1,7 @@
+# PROJECT DEPRACATED BECAUSE OF DRASTIC CHANGES IN ATOM EXTERNAL PROCESS API.
+# For Elixir autocompletion in Atom head to https://github.com/msaraiva/atom-elixir
+
+
 # Atom intelligent Elixir Autocompletion for Autocomplete+
 
 ![Image of autocomplete-elixir](https://raw.githubusercontent.com/wende/autocomplete-elixir/master/pics/presentation.png)
