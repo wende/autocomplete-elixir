@@ -14,7 +14,7 @@ module.exports.handleMatch = (editor, e) ->
   if not atom.config.get("autocomplete-elixir.matchDoEnd") then return
   decorations.map (a) -> a.destroy()
 
-  lastLineNo = editor.buffer.lines.length - 1
+  lastLineNo = editor.buffer.getLines().length - 1
   [x, y] = e.cursor.getBufferPosition().toArray()
   fromBeginning = new Range([0,0], [x, y-1])
   toEnd         = new Range([x, y+1], [lastLineNo, 0])
