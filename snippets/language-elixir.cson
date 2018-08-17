@@ -37,9 +37,6 @@
     'body': 'spawn(fn ->\n\t$1\nend)'
   'spawn_link' :
     'prefix' : 'spawn'
-    'body': 'spawn(fn ->\n\t$1\nend)'
-  'spawn' :
-    'prefix' : 'spawn'
     'body': 'spawn_link(fn ->\n\t$1\nend)'
   'Agent start' :
     'prefix' : 'Agent.start'
